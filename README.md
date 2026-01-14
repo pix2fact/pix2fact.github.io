@@ -19,6 +19,17 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000` in your browser.
 
+## Deployment (GitHub Pages)
+
+This repo includes a GitHub Actions workflow that deploys the site to GitHub Pages on every push to `main`:
+
+- Workflow file: `.github/workflows/pages.yml`
+- Output: GitHub Pages (served from the uploaded artifact)
+
+Repository setting requirement (one-time):
+
+- Settings → Pages → Build and deployment → Source: **GitHub Actions**
+
 ## Replace placeholders
 
 - Replace the title, author names, and author links in `index.html`
