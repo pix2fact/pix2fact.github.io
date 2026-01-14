@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benchmark Title (Placeholder)</title>
+    <meta
+      name="description"
+      content="A research benchmark website template with a filterable leaderboard."
+    />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-title-row">
+            <img
+              class="hero-logo"
+              src="./assets/logo.svg"
+              alt="Project logo"
+              width="44"
+              height="44"
+            />
+            <h1 class="hero-title">Benchmark Title (Placeholder)</h1>
+          </div>
+          <p class="hero-subtitle">
+            A short tagline describing what this benchmark evaluates. (Placeholder)
+          </p>
+
+          <div class="authors" aria-label="Authors">
+            <a class="author" href="#" target="_blank" rel="noreferrer">Author A</a>
+            <span class="author-sep">·</span>
+            <a class="author" href="#" target="_blank" rel="noreferrer">Author B</a>
+            <span class="author-sep">·</span>
+            <a class="author" href="#" target="_blank" rel="noreferrer">Author C</a>
+            <span class="author-sep">·</span>
+            <a class="author" href="#" target="_blank" rel="noreferrer">Author D</a>
+          </div>
+
+          <div class="hero-actions" aria-label="Quick links">
+            <a class="pill" href="#" target="_blank" rel="noreferrer">
+              <span class="pill-icon" aria-hidden="true">📄</span>
+              Paper (placeholder)
+            </a>
+            <a class="pill" href="#" target="_blank" rel="noreferrer">
+              <span class="pill-icon" aria-hidden="true">💻</span>
+              Code (placeholder)
+            </a>
+            <a class="pill" href="#leaderboard">
+              <span class="pill-icon" aria-hidden="true">🏆</span>
+              Leaderboard
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="teaser" aria-label="Teaser">
+        <figure class="teaser">
+          <img
+            class="teaser-image"
+            src="./assets/teaser.svg"
+            alt="Teaser figure placeholder"
+            loading="lazy"
+          />
+          <figcaption class="teaser-caption">
+            Teaser caption describing the benchmark at a high level. (Placeholder)
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section container" id="introduction" aria-label="Introduction">
+        <h2 class="section-title">Introduction</h2>
+        <div class="prose">
+          <p>
+            This section is intentionally a placeholder. Write a concise overview of
+            the benchmark motivation, what it evaluates, and the key takeaways.
+          </p>
+          <p>
+            Suggested items to cover (placeholders): task definition, dataset scale,
+            evaluation protocol, and a brief summary of results trends.
+          </p>
+        </div>
+      </section>
+
+      <section class="section container" id="leaderboard" aria-label="Leaderboard">
+        <div class="section-title-row">
+          <h2 class="section-title">Leaderboard</h2>
+          <p class="section-note">
+            Data shown below is mock content. Replace with real results later.
+          </p>
+        </div>
+
+        <div class="controls" role="region" aria-label="Leaderboard filters">
+          <div class="control">
+            <label for="q" class="control-label">Search</label>
+            <input
+              id="q"
+              class="control-input"
+              type="search"
+              placeholder="Search model / organization…"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="control">
+            <label for="track" class="control-label">Track</label>
+            <select id="track" class="control-select">
+              <option value="all">All</option>
+            </select>
+          </div>
+
+          <div class="control">
+            <label for="modality" class="control-label">Modality</label>
+            <select id="modality" class="control-select">
+              <option value="all">All</option>
+            </select>
+          </div>
+
+          <div class="control">
+            <label for="setting" class="control-label">Setting</label>
+            <select id="setting" class="control-select">
+              <option value="all">All</option>
+            </select>
+          </div>
+
+          <div class="control control-inline">
+            <label class="checkbox">
+              <input id="opensource" type="checkbox" />
+              <span>Open-source only</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="table-card" role="region" aria-label="Leaderboard table">
+          <div class="table-meta">
+            <div class="muted" id="resultCount">0 results</div>
+            <button class="ghost" id="resetBtn" type="button">Reset</button>
+          </div>
+
+          <div class="table-wrap">
+            <table class="table" id="leaderboardTable">
+              <thead>
+                <tr>
+                  <th data-key="rank" class="col-rank" aria-label="Rank">#</th>
+                  <th data-key="model" class="col-model">Model</th>
+                  <th data-key="org" class="col-org">Organization</th>
+                  <th data-key="track" class="col-track">Track</th>
+                  <th data-key="modality" class="col-modality">Modality</th>
+                  <th data-key="setting" class="col-setting">Setting</th>
+                  <th data-key="score" class="col-score is-sorted" aria-sort="descending">
+                    Score
+                    <span class="sort-indicator" aria-hidden="true">↓</span>
+                  </th>
+                  <th data-key="date" class="col-date">Date</th>
+                  <th class="col-links">Links</th>
+                </tr>
+              </thead>
+              <tbody id="leaderboardBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="citation" aria-label="Citation">
+        <h2 class="section-title">Citation</h2>
+        <div class="callout">
+          <p class="muted">
+            Add your BibTeX here. This is a placeholder snippet.
+          </p>
+          <pre class="code" aria-label="BibTeX placeholder"><code>@article{benchmark_placeholder,
+  title   = {Benchmark Title (Placeholder)},
+  author  = {Author A and Author B and Author C and Author D},
+  journal = {arXiv},
+  year    = {2026}
+}</code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="muted">
+          © <span id="year"></span> Benchmark (Placeholder) · Built for research communication.
+        </div>
+        <div class="footer-links">
+          <a href="#introduction">Intro</a>
+          <a href="#leaderboard">Leaderboard</a>
+          <a href="#citation">Citation</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
