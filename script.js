@@ -13,51 +13,44 @@ const ORG_META = {
 };
 
 const RAW_RESULTS = [
-  { model: "gemini2.5 pro", org: "Google DeepMind", score: 8.1, opensource: false },
+  { model: "gemini-2.5-pro", org: "Google", score: 8.1, opensource: false },
   {
-    model: "Gemini 2.5 pro with search api",
-    org: "Google DeepMind",
+    model: "gemini-2.5-pro 2.5",
+    org: "Google",
     score: 16,
     opensource: false,
+    withSearch: true,
   },
-  { model: "gemini-3-pro", org: "Google DeepMind", score: 12.5, opensource: false },
+  { model: "gemini-3-pro", org: "Google", score: 12.5, opensource: false , withSearch: false},
   {
-    model: "gemini-3-pro with search api",
-    org: "Google DeepMind",
-    score: 27,
+    model: "gemini-3-pro",
+    org: "Google",
+    score: 27.0,
     opensource: false,
+    withSearch: true,
   },
-  { model: "GPT-5", org: "OpenAI", score: 5.6, opensource: false },
-  { model: "GPT-5 with search", org: "OpenAI", score: 11.5, opensource: false },
+  { model: "gpt-5", org: "OpenAI", score: 5.6, opensource: false },
+  { model: "gpt-5 with search", org: "OpenAI", score: 11.5, opensource: false },
   { model: "gpt-4o-2024-08-06", org: "OpenAI", score: 2.8, opensource: false },
   { model: "Qwen3-VL-32B-Instruct", org: "Alibaba", score: 0.3, opensource: true },
   { model: "grok-4-1-fast-non-reasoning", org: "xAI", score: 1.9, opensource: false },
   {
-    model: "grok-4-1-fast-non-reasoning with search",
+    model: "grok-4-1-fast-non-reasoning",
     org: "xAI",
     score: 1.9,
     opensource: false,
+    withSearch: true,
   },
-  { model: "Claude4.5 opus", org: "Anthropic", score: 4.0, opensource: false },
-  {
-    model: "doubao-seed-1-6-vision-250815",
-    org: "ByteDance",
-    score: 2.4,
-    opensource: false,
-  },
-  { model: "doubao-seed-1-8-251228", org: "ByteDance", score: 2.5, opensource: false },
-  {
-    model: "doubao-seed-1-8-251228 with search api",
-    org: "ByteDance",
-    score: 13,
-    opensource: false,
-  },
+  { model: "claude-4.5-opus", org: "Anthropic", score: 4.0, opensource: false },
+  { model: "doubao-seed-1-6-vision-250815", org: "ByteDance", score: 2.4, opensource: false , withSearch: false},
+  { model: "doubao-seed-1-8-251228", org: "ByteDance", score: 2.5, opensource: false , withSearch: false},
+  { model: "doubao-seed-1-8-251228", org: "ByteDance", score: 13, opensource: false , withSearch: true},
 ];
 
 const LEADERBOARD_RESULTS = RAW_RESULTS.map((row) => ({
   ...row,
   track: "Overall",
-  setting: row.model.toLowerCase().includes("search") ? "Search" : "No Search",
+  setting: row.withSearch ? "Search API enabled" : "No search API",
   date: UPDATE_DATE,
 }));
 
@@ -155,7 +148,7 @@ function renderTableBody(tbodyEl, rows) {
     tr.appendChild(td(String(rank)));
     tr.appendChild(tdStrong(r.model));
     tr.appendChild(tdOrg(r.org));
-    tr.appendChild(tdBadge(r.track));
+    // tr.appendChild(tdBadge(r.track));
     tr.appendChild(td(r.setting));
     tr.appendChild(tdScore(r.score));
     tr.appendChild(td(r.date));
@@ -181,7 +174,7 @@ function tdStrong(text) {
 function tdScore(score) {
   const el = document.createElement("td");
   el.className = "col-score";
-  el.textContent = `${Number(score).toFixed(2)}%`;
+  el.textContent = `${Number(score).toFixed(1)}%`;
   return el;
 }
 
@@ -199,19 +192,19 @@ function tdOrg(org) {
   const wrap = document.createElement("div");
   wrap.className = "org-cell";
 
-  const logo = document.createElement("span");
-  const meta = ORG_META[org] || {};
-  logo.className = "org-logo";
-  logo.textContent = meta.short || org.slice(0, 2);
-  if (meta.bg) logo.style.setProperty("--logo-bg", meta.bg);
-  if (meta.fg) logo.style.setProperty("--logo-fg", meta.fg);
-  logo.setAttribute("aria-hidden", "true");
+  // const logo = document.createElement("span");
+  // const meta = ORG_META[org] || {};
+  // logo.className = "org-logo";
+  // logo.textContent = meta.short || org.slice(0, 2);
+  // if (meta.bg) logo.style.setProperty("--logo-bg", meta.bg);
+  // if (meta.fg) logo.style.setProperty("--logo-fg", meta.fg);
+  // logo.setAttribute("aria-hidden", "true");
 
   const name = document.createElement("span");
   name.className = "org-name";
   name.textContent = org;
 
-  wrap.appendChild(logo);
+  // wrap.appendChild(logo);
   wrap.appendChild(name);
   el.appendChild(wrap);
   return el;
