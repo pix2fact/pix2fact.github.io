@@ -95,7 +95,7 @@
         <div class="section-title-row">
           <h2 class="section-title">Leaderboard</h2>
           <p class="section-note">
-            Data shown below is mock content. Replace with real results later.
+            Accuracy results updated from the latest model report.
           </p>
         </div>
 
@@ -114,13 +114,6 @@
           <div class="control">
             <label for="track" class="control-label">Track</label>
             <select id="track" class="control-select">
-              <option value="all">All</option>
-            </select>
-          </div>
-
-          <div class="control">
-            <label for="modality" class="control-label">Modality</label>
-            <select id="modality" class="control-select">
               <option value="all">All</option>
             </select>
           </div>
@@ -154,14 +147,12 @@
                   <th data-key="model" class="col-model">Model</th>
                   <th data-key="org" class="col-org">Organization</th>
                   <th data-key="track" class="col-track">Track</th>
-                  <th data-key="modality" class="col-modality">Modality</th>
                   <th data-key="setting" class="col-setting">Setting</th>
                   <th data-key="score" class="col-score is-sorted" aria-sort="descending">
-                    Score
-                    <span class="sort-indicator" aria-hidden="true">↓</span>
+                Accuracy (%)
+                <span class="sort-indicator" aria-hidden="true">↓</span>
                   </th>
                   <th data-key="date" class="col-date">Date</th>
-                  <th class="col-links">Links</th>
                 </tr>
               </thead>
               <tbody id="leaderboardBody"></tbody>
