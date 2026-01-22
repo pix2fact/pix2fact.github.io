@@ -1,68 +1,69 @@
 /* eslint-disable no-use-before-define */
-// This file intentionally uses mock data. Replace `MOCK_RESULTS` with real leaderboard data later.
+// This file uses static leaderboard data; update as needed.
 
-const MOCK_RESULTS = [
+const UPDATE_DATE = "2026-01-22";
+
+const ORG_META = {
+  "Google DeepMind": { short: "G", bg: "#1a73e8", fg: "#ffffff" },
+  OpenAI: { short: "O", bg: "#0f172a", fg: "#ffffff" },
+  Alibaba: { short: "A", bg: "#f97316", fg: "#ffffff" },
+  xAI: { short: "x", bg: "#111827", fg: "#ffffff" },
+  Anthropic: { short: "An", bg: "#7c3aed", fg: "#ffffff" },
+  ByteDance: { short: "BD", bg: "#ef4444", fg: "#ffffff" },
+};
+
+const RAW_RESULTS = [
+  { model: "gemini2.5 pro", org: "Google DeepMind", score: 8.1, opensource: false },
   {
-    model: "Model Alpha",
-    org: "Org One",
-    track: "Overall",
-    modality: "Video+Text",
-    setting: "Closed",
-    score: 78.4,
-    date: "2026-01-10",
+    model: "Gemini 2.5 pro with search api",
+    org: "Google DeepMind",
+    score: 16,
     opensource: false,
-    links: { paper: "#", code: "#" },
   },
+  { model: "gemini-3-pro", org: "Google DeepMind", score: 12.5, opensource: false },
   {
-    model: "Model Beta",
-    org: "Org Two",
-    track: "Overall",
-    modality: "Video+Text",
-    setting: "Open",
-    score: 76.9,
-    date: "2026-01-08",
-    opensource: true,
-    links: { paper: "#", code: "#" },
-  },
-  {
-    model: "Model Gamma",
-    org: "Org Three",
-    track: "Temporal",
-    modality: "Video",
-    setting: "Closed",
-    score: 74.2,
-    date: "2025-12-20",
+    model: "gemini-3-pro with search api",
+    org: "Google DeepMind",
+    score: 27,
     opensource: false,
-    links: { paper: "#", code: "#" },
   },
+  { model: "GPT-5", org: "OpenAI", score: 5.6, opensource: false },
+  { model: "GPT-5 with search", org: "OpenAI", score: 11.5, opensource: false },
+  { model: "gpt-4o-2024-08-06", org: "OpenAI", score: 2.8, opensource: false },
+  { model: "Qwen3-VL-32B-Instruct", org: "Alibaba", score: 0.3, opensource: true },
+  { model: "grok-4-1-fast-non-reasoning", org: "xAI", score: 1.9, opensource: false },
   {
-    model: "Model Delta",
-    org: "Org Two",
-    track: "Audio",
-    modality: "Video+Audio+Text",
-    setting: "Open",
-    score: 73.1,
-    date: "2025-12-18",
-    opensource: true,
-    links: { paper: "#", code: "#" },
-  },
-  {
-    model: "Model Epsilon",
-    org: "Org Four",
-    track: "Reasoning",
-    modality: "Video+Text",
-    setting: "Closed",
-    score: 71.6,
-    date: "2025-12-05",
+    model: "grok-4-1-fast-non-reasoning with search",
+    org: "xAI",
+    score: 1.9,
     opensource: false,
-    links: { paper: "#", code: "#" },
+  },
+  { model: "Claude4.5 opus", org: "Anthropic", score: 4.0, opensource: false },
+  {
+    model: "doubao-seed-1-6-vision-250815",
+    org: "ByteDance",
+    score: 2.4,
+    opensource: false,
+  },
+  { model: "doubao-seed-1-8-251228", org: "ByteDance", score: 2.5, opensource: false },
+  {
+    model: "doubao-seed-1-8-251228 with search api",
+    org: "ByteDance",
+    score: 13,
+    opensource: false,
   },
 ];
+
+const LEADERBOARD_RESULTS = RAW_RESULTS.map((row) => ({
+  ...row,
+  track: "Overall",
+  setting: row.model.toLowerCase().includes("search") ? "Search" : "No Search",
+  date: UPDATE_DATE,
+}));
 
 const state = {
   q: "",
   track: "all",
-  modality: "all",
   setting: "all",
   opensourceOnly: false,
   sortKey: "score",
@@ -84,7 +85,7 @@ function normalize(s) {
 function matchesQuery(row, q) {
   if (!q) return true;
   const haystack = normalize(
-    `${row.model} ${row.org} ${row.track} ${row.modality} ${row.setting}`,
+    `${row.model} ${row.org} ${row.track} ${row.setting}`,
   );
   return haystack.includes(normalize(q));
 }
@@ -109,7 +110,6 @@ function sortRows(rows, key, dir) {
 function computeView(rows) {
   let out = rows.filter((r) => matchesQuery(r, state.q));
   out = out.filter((r) => matchesFilter(r.track, state.track));
-  out = out.filter((r) => matchesFilter(r.modality, state.modality));
   out = out.filter((r) => matchesFilter(r.setting, state.setting));
   if (state.opensourceOnly) out = out.filter((r) => r.opensource);
   out = sortRows(out, state.sortKey, state.sortDir);
@@ -154,13 +154,11 @@ function renderTableBody(tbodyEl, rows) {
 
     tr.appendChild(td(String(rank)));
     tr.appendChild(tdStrong(r.model));
-    tr.appendChild(td(r.org));
+    tr.appendChild(tdOrg(r.org));
     tr.appendChild(tdBadge(r.track));
-    tr.appendChild(td(r.modality));
     tr.appendChild(td(r.setting));
     tr.appendChild(tdScore(r.score));
     tr.appendChild(td(r.date));
-    tr.appendChild(tdLinks(r.links));
 
     tbodyEl.appendChild(tr);
   });
@@ -183,7 +181,7 @@ function tdStrong(text) {
 function tdScore(score) {
   const el = document.createElement("td");
   el.className = "col-score";
-  el.textContent = Number(score).toFixed(1);
+  el.textContent = `${Number(score).toFixed(2)}%`;
   return el;
 }
 
@@ -196,33 +194,31 @@ function tdBadge(text) {
   return el;
 }
 
-function tdLinks(links) {
+function tdOrg(org) {
   const el = document.createElement("td");
   const wrap = document.createElement("div");
-  wrap.className = "links";
+  wrap.className = "org-cell";
 
-  const paper = document.createElement("a");
-  paper.className = "link";
-  paper.href = links.paper || "#";
-  paper.target = "_blank";
-  paper.rel = "noreferrer";
-  paper.textContent = "paper";
+  const logo = document.createElement("span");
+  const meta = ORG_META[org] || {};
+  logo.className = "org-logo";
+  logo.textContent = meta.short || org.slice(0, 2);
+  if (meta.bg) logo.style.setProperty("--logo-bg", meta.bg);
+  if (meta.fg) logo.style.setProperty("--logo-fg", meta.fg);
+  logo.setAttribute("aria-hidden", "true");
 
-  const code = document.createElement("a");
-  code.className = "link";
-  code.href = links.code || "#";
-  code.target = "_blank";
-  code.rel = "noreferrer";
-  code.textContent = "code";
+  const name = document.createElement("span");
+  name.className = "org-name";
+  name.textContent = org;
 
-  wrap.appendChild(paper);
-  wrap.appendChild(code);
+  wrap.appendChild(logo);
+  wrap.appendChild(name);
   el.appendChild(wrap);
   return el;
 }
 
 function sync() {
-  const rows = computeView(MOCK_RESULTS);
+  const rows = computeView(LEADERBOARD_RESULTS);
   renderTableBody(dom.tbody, rows);
   dom.resultCount.textContent = `${rows.length} result${rows.length === 1 ? "" : "s"}`;
   setSortedHeader(dom.table, state.sortKey, state.sortDir);
@@ -231,7 +227,6 @@ function sync() {
 function reset() {
   state.q = "";
   state.track = "all";
-  state.modality = "all";
   state.setting = "all";
   state.opensourceOnly = false;
   state.sortKey = "score";
@@ -239,7 +234,6 @@ function reset() {
 
   dom.q.value = "";
   dom.track.value = "all";
-  dom.modality.value = "all";
   dom.setting.value = "all";
   dom.opensource.checked = false;
   sync();
@@ -250,7 +244,6 @@ const dom = {};
 function init() {
   dom.q = document.getElementById("q");
   dom.track = document.getElementById("track");
-  dom.modality = document.getElementById("modality");
   dom.setting = document.getElementById("setting");
   dom.opensource = document.getElementById("opensource");
   dom.table = document.getElementById("leaderboardTable");
@@ -258,12 +251,10 @@ function init() {
   dom.resultCount = document.getElementById("resultCount");
   dom.resetBtn = document.getElementById("resetBtn");
 
-  const tracks = uniq(MOCK_RESULTS.map(byKey("track")));
-  const modalities = uniq(MOCK_RESULTS.map(byKey("modality")));
-  const settings = uniq(MOCK_RESULTS.map(byKey("setting")));
+  const tracks = uniq(LEADERBOARD_RESULTS.map(byKey("track")));
+  const settings = uniq(LEADERBOARD_RESULTS.map(byKey("setting")));
 
   fillSelect(dom.track, tracks);
-  fillSelect(dom.modality, modalities);
   fillSelect(dom.setting, settings);
 
   dom.q.addEventListener("input", () => {
@@ -272,10 +263,6 @@ function init() {
   });
   dom.track.addEventListener("change", () => {
     state.track = dom.track.value;
-    sync();
-  });
-  dom.modality.addEventListener("change", () => {
-    state.modality = dom.modality.value;
     sync();
   });
   dom.setting.addEventListener("change", () => {

@@ -61,6 +61,8 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero-logo {
@@ -68,10 +70,12 @@ a:hover {
 }
 
 .hero-title {
-  font-size: clamp(34px, 4vw, 54px);
-  line-height: 1.1;
+  font-size: clamp(28px, 3.2vw, 44px);
+  line-height: 1.15;
   margin: 0;
   letter-spacing: -0.02em;
+  max-width: 860px;
+  text-wrap: balance;
 }
 
 .hero-subtitle {
@@ -183,7 +187,7 @@ a:hover {
 
 .controls {
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr 0.7fr 0.7fr auto;
+  grid-template-columns: 1.3fr 0.7fr 0.7fr auto;
   gap: 12px;
   align-items: end;
   margin-top: 10px;
@@ -279,7 +283,7 @@ a:hover {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  min-width: 920px;
+  min-width: 760px;
 }
 
 .table thead th {
@@ -298,10 +302,6 @@ a:hover {
   user-select: none;
   white-space: nowrap;
 }
-.table thead th.col-links {
-  cursor: default;
-}
-
 .table thead th.is-sorted {
   color: rgba(37, 99, 235, 0.95);
 }
@@ -316,6 +316,29 @@ a:hover {
   border-bottom: 1px solid rgba(15, 23, 42, 0.06);
   vertical-align: middle;
   color: rgba(17, 24, 39, 0.92);
+}
+
+.org-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.org-logo {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  background: var(--logo-bg, #64748b);
+  color: var(--logo-fg, #ffffff);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  flex: 0 0 auto;
 }
 
 .table tbody tr:nth-child(even) td {
@@ -351,24 +374,6 @@ a:hover {
   white-space: nowrap;
 }
 
-.links {
-  display: inline-flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.link {
-  font-size: 13px;
-  font-weight: 600;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: #fff;
-  color: #111827;
-}
-.link:hover {
-  text-decoration: none;
-  border-color: rgba(37, 99, 235, 0.35);
-}
 
 .callout {
   border: 1px solid var(--border);
