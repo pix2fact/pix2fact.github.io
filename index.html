@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Benchmark Title (Placeholder)</title>
+    <title>From Pixels to Facts (Pix2Fact): Benchmarking Multi-Hop Reasoning for Fine-Grained Visual Fact Checking</title>
     <meta
       name="description"
       content="A research benchmark website template with a filterable leaderboard."
@@ -29,20 +29,15 @@
               width="44"
               height="44"
             />
-            <h1 class="hero-title">Benchmark Title (Placeholder)</h1>
+            <h1 class="hero-title">From Pixels to Facts (Pix2Fact): Benchmarking Multi-Hop Reasoning for Fine-Grained Visual Fact Checking</h1>
           </div>
           <p class="hero-subtitle">
             A short tagline describing what this benchmark evaluates. (Placeholder)
           </p>
 
           <div class="authors" aria-label="Authors">
-            <a class="author" href="#" target="_blank" rel="noreferrer">Author A</a>
-            <span class="author-sep">·</span>
-            <a class="author" href="#" target="_blank" rel="noreferrer">Author B</a>
-            <span class="author-sep">·</span>
-            <a class="author" href="#" target="_blank" rel="noreferrer">Author C</a>
-            <span class="author-sep">·</span>
-            <a class="author" href="#" target="_blank" rel="noreferrer">Author D</a>
+            <a class="author" href="#" target="_blank" rel="noreferrer">Anonymous Authors</a>
+
           </div>
 
           <div class="hero-actions" aria-label="Quick links">
@@ -57,6 +52,10 @@
             <a class="pill" href="#leaderboard">
               <span class="pill-icon" aria-hidden="true">🏆</span>
               Leaderboard
+            </a>
+            <a class="pill" href="#dataset-viewer">
+              <span class="pill-icon" aria-hidden="true">🏆</span>
+              Dataset Viewer
             </a>
           </div>
         </div>
@@ -171,6 +170,50 @@
         </div>
       </section>
 
+      <section class="section container" id="dataset-viewer" aria-label="Dataset Viewer">
+        <div class="section-title-row">
+          <h2 class="section-title">Dataset Viewer</h2>
+          <p class="section-note">
+            Browse through the dataset samples to understand the task format.
+          </p>
+        </div>
+
+        <div class="dataset-controls" role="region" aria-label="Dataset filters">
+          <div class="control">
+            <label for="dataset-search" class="control-label">Search Questions</label>
+            <input
+              id="dataset-search"
+              class="control-input"
+              type="search"
+              placeholder="Search in questions..."
+              autocomplete="off"
+            />
+          </div>
+          <div class="control">
+            <label for="items-per-page" class="control-label">Items per page</label>
+            <select id="items-per-page" class="control-select">
+              <option value="5">5</option>
+              <option value="10" selected>10</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="dataset-meta">
+          <div class="muted" id="dataset-count">Loading...</div>
+          <div class="pagination-controls">
+            <button class="ghost" id="prev-page" type="button" disabled>Previous</button>
+            <span id="page-info">Page 1 of 1</span>
+            <button class="ghost" id="next-page" type="button" disabled>Next</button>
+          </div>
+        </div>
+
+        <div class="dataset-grid" id="dataset-container">
+          <!-- Dataset items will be dynamically loaded here -->
+        </div>
+      </section>
+
       <section class="section container" id="citation" aria-label="Citation">
         <h2 class="section-title">Citation</h2>
         <div class="callout">
@@ -195,11 +238,20 @@
         <div class="footer-links">
           <a href="#introduction">Intro</a>
           <a href="#leaderboard">Leaderboard</a>
+          <a href="#dataset-viewer">Dataset Viewer</a>
           <a href="#citation">Citation</a>
         </div>
       </div>
     </footer>
 
     <script src="./script.js" defer></script>
+
+    <!-- Fullscreen Image Modal -->
+    <div class="modal" id="imageModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <img id="modalImage" src="" alt="Fullscreen image">
+      </div>
+    </div>
   </body>
 </html>

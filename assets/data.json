@@ -1,0 +1,7 @@
+[
+    {
+        "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/003bf48c-27ff-4fc3-9910-e838b8c57982.jpg",
+        "qustion": "Let x be the number of letters in the first word to the right of “Using” in the image. According to the QS World University Rankings 2026, which university is ranked x‑th globally?",
+        "answer": "ETH Zurich"
+    }
+]

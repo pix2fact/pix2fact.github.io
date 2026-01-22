@@ -306,6 +306,207 @@ function init() {
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
   sync();
+
+  // Initialize dataset viewer
+  initDatasetViewer();
+}
+
+// Dataset Viewer functionality
+let datasetData = [];
+const datasetState = {
+  searchQuery: "",
+  currentPage: 1,
+  itemsPerPage: 10,
+  totalPages: 1,
+};
+
+function loadDataset() {
+  return fetch('./assets/data.json')
+    .then(response => response.json())
+    .then(data => {
+      datasetData = data;
+      datasetState.totalPages = Math.ceil(datasetData.length / datasetState.itemsPerPage);
+      return datasetData;
+    })
+    .catch(error => {
+      console.error('Error loading dataset:', error);
+      return [];
+    });
+}
+
+function filterDatasetItems(items, query) {
+  if (!query) return items;
+
+  const normalizedQuery = normalize(query);
+  return items.filter(item => {
+    const questionText = normalize(item.qustion || item.question || '');
+    return questionText.includes(normalizedQuery);
+  });
+}
+
+function getPaginatedItems(items, page, itemsPerPage) {
+  const startIndex = (page - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  return items.slice(startIndex, endIndex);
+}
+
+function renderDatasetItem(item) {
+  const itemDiv = document.createElement('div');
+  itemDiv.className = 'dataset-item';
+
+  const imageDiv = document.createElement('div');
+  imageDiv.className = 'dataset-image';
+  const img = document.createElement('img');
+  img.src = item.image;
+  img.alt = 'Dataset sample image';
+  img.loading = 'lazy';
+  img.addEventListener('click', () => openModal(item.image));
+  imageDiv.appendChild(img);
+
+  const contentDiv = document.createElement('div');
+  contentDiv.className = 'dataset-content';
+
+  const questionDiv = document.createElement('div');
+  questionDiv.className = 'dataset-question';
+  const questionLabel = document.createElement('strong');
+  questionLabel.textContent = 'Question: ';
+  questionDiv.appendChild(questionLabel);
+  questionDiv.appendChild(document.createTextNode(item.qustion || item.question));
+
+  const answerDiv = document.createElement('div');
+  answerDiv.className = 'dataset-answer';
+  const answerLabel = document.createElement('strong');
+  answerLabel.textContent = 'Answer: ';
+  answerDiv.appendChild(answerLabel);
+  answerDiv.appendChild(document.createTextNode(item.answer));
+
+  contentDiv.appendChild(questionDiv);
+  contentDiv.appendChild(answerDiv);
+
+  itemDiv.appendChild(imageDiv);
+  itemDiv.appendChild(contentDiv);
+
+  return itemDiv;
+}
+
+function renderDatasetItems(items) {
+  const container = dom.datasetContainer;
+  container.innerHTML = '';
+
+  if (items.length === 0) {
+    const noResults = document.createElement('div');
+    noResults.className = 'no-results';
+    noResults.textContent = 'No items found matching your search.';
+    container.appendChild(noResults);
+    return;
+  }
+
+  items.forEach(item => {
+    const itemElement = renderDatasetItem(item);
+    container.appendChild(itemElement);
+  });
+}
+
+function updateDatasetPagination() {
+  const filteredItems = filterDatasetItems(datasetData, datasetState.searchQuery);
+  const totalItems = filteredItems.length;
+  datasetState.totalPages = Math.ceil(totalItems / datasetState.itemsPerPage);
+
+  // Ensure current page is valid
+  if (datasetState.currentPage > datasetState.totalPages) {
+    datasetState.currentPage = datasetState.totalPages || 1;
+  }
+  if (datasetState.currentPage < 1) {
+    datasetState.currentPage = 1;
+  }
+
+  // Update pagination controls
+  dom.datasetCount.textContent = `Showing ${totalItems} item${totalItems === 1 ? '' : 's'}`;
+  dom.pageInfo.textContent = `Page ${datasetState.currentPage} of ${datasetState.totalPages}`;
+
+  dom.prevPage.disabled = datasetState.currentPage <= 1;
+  dom.nextPage.disabled = datasetState.currentPage >= datasetState.totalPages;
+
+  // Render current page items
+  const paginatedItems = getPaginatedItems(filteredItems, datasetState.currentPage, datasetState.itemsPerPage);
+  renderDatasetItems(paginatedItems);
+}
+
+// Modal functionality
+function openModal(imageSrc) {
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  modalImage.src = imageSrc;
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeModal() {
+  const modal = document.getElementById('imageModal');
+  modal.classList.remove('active');
+  document.body.style.overflow = ''; // Restore scrolling
+}
+
+function initDatasetViewer() {
+  // Get DOM elements
+  dom.datasetSearch = document.getElementById('dataset-search');
+  dom.itemsPerPage = document.getElementById('items-per-page');
+  dom.datasetCount = document.getElementById('dataset-count');
+  dom.prevPage = document.getElementById('prev-page');
+  dom.nextPage = document.getElementById('next-page');
+  dom.pageInfo = document.getElementById('page-info');
+  dom.datasetContainer = document.getElementById('dataset-container');
+
+  // Modal elements
+  dom.imageModal = document.getElementById('imageModal');
+  dom.modalClose = document.getElementById('modalClose');
+
+  // Load dataset and initialize
+  loadDataset().then(() => {
+    updateDatasetPagination();
+
+    // Add event listeners
+    dom.datasetSearch.addEventListener('input', () => {
+      datasetState.searchQuery = dom.datasetSearch.value;
+      datasetState.currentPage = 1; // Reset to first page on search
+      updateDatasetPagination();
+    });
+
+    dom.itemsPerPage.addEventListener('change', () => {
+      datasetState.itemsPerPage = parseInt(dom.itemsPerPage.value);
+      datasetState.currentPage = 1; // Reset to first page
+      updateDatasetPagination();
+    });
+
+    dom.prevPage.addEventListener('click', () => {
+      if (datasetState.currentPage > 1) {
+        datasetState.currentPage--;
+        updateDatasetPagination();
+      }
+    });
+
+    dom.nextPage.addEventListener('click', () => {
+      if (datasetState.currentPage < datasetState.totalPages) {
+        datasetState.currentPage++;
+        updateDatasetPagination();
+      }
+    });
+
+    // Modal event listeners
+    dom.modalClose.addEventListener('click', closeModal);
+    dom.imageModal.addEventListener('click', (e) => {
+      if (e.target === dom.imageModal) {
+        closeModal();
+      }
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && dom.imageModal.classList.contains('active')) {
+        closeModal();
+      }
+    });
+  });
 }
 
 document.addEventListener("DOMContentLoaded", init);
