@@ -31,9 +31,6 @@
             />
             <h1 class="hero-title">From Pixels to Facts (Pix2Fact): Benchmarking Multi-Hop Reasoning for Fine-Grained Visual Fact Checking</h1>
           </div>
-          <p class="hero-subtitle">
-            A short tagline describing what this benchmark evaluates. (Placeholder)
-          </p>
 
           <div class="authors" aria-label="Authors">
             <a class="author" href="#" target="_blank" rel="noreferrer">Anonymous Authors</a>
@@ -54,7 +51,7 @@
               Leaderboard
             </a>
             <a class="pill" href="#dataset-viewer">
-              <span class="pill-icon" aria-hidden="true">🏆</span>
+              <span class="pill-icon" aria-hidden="true">🔍</span>
               Dataset Viewer
             </a>
           </div>
@@ -65,14 +62,16 @@
     <main>
       <section class="section container" id="teaser" aria-label="Teaser">
         <figure class="teaser">
-          <img
-            class="teaser-image"
-            src="./assets/teaser.svg"
-            alt="Teaser figure placeholder"
-            loading="lazy"
-          />
+          <a href="./assets/fig2-dataset.pdf" target="_blank" class="teaser-link">
+            <img
+              class="teaser-image"
+              src="./assets/fig2-dataset.png"
+              alt="Dataset figure from research paper - Click to view PDF"
+              loading="lazy"
+            />
+          </a>
           <figcaption class="teaser-caption">
-            Teaser caption describing the benchmark at a high level. (Placeholder)
+            The process of constructing Pix2Fact benchmark.
           </figcaption>
         </figure>
       </section>
@@ -81,12 +80,15 @@
         <h2 class="section-title">Introduction</h2>
         <div class="prose">
           <p>
-            This section is intentionally a placeholder. Write a concise overview of
-            the benchmark motivation, what it evaluates, and the key takeaways.
+            Despite progress on general tasks, VLMs struggle with challenges demanding both detailed visual grounding and deliberate knowledge-based reasoning, a synergy not captured by existing benchmarks that evaluate these skills separately. To close this gap, we introduce <strong>Pix2Fact</strong>, a new visual question-answering benchmark designed to evaluate expert-level perception and knowledge-intensive multi-hop reasoning.
           </p>
+
           <p>
-            Suggested items to cover (placeholders): task definition, dataset scale,
-            evaluation protocol, and a brief summary of results trends.
+            Pix2Fact contains 1,000 high-resolution (4K+) images spanning 8 daily-life scenarios and situations, with questions and answers meticulously crafted by annotators holding PhDs from top global universities working in partnership with a professional data annotation firm. Each question requires detailed visual grounding, multi-hop reasoning, and the integration of external knowledge to answer.
+          </p>
+
+          <p>
+            Our evaluation of 9 state-of-the-art VLMs, including proprietary models like Gemini-3-Pro and GPT-5, reveals the substantial challenge posed by Pix2Fact: the most advanced model achieves only 25.0% average accuracy, in stark contrast to human performance of 45.7%. This significant gap underscores the limitations of current models in replicating human-level visual comprehension. We believe Pix2Fact will serve as a critical benchmark to drive the development of next-generation multimodal agents that combine fine-grained perception with robust, knowledge-based reasoning.
           </p>
         </div>
       </section>
@@ -125,7 +127,7 @@
             </select>
           </div>
 
-          <div class="control">
+          <div class="controld">
             <label class="checkbox">
               <input id="opensource" type="checkbox" />
               <span>Open-source only</span>

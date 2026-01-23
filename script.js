@@ -5,11 +5,12 @@ const UPDATE_DATE = "2026-01-22";
 
 const ORG_META = {
   "Google DeepMind": { short: "G", bg: "#1a73e8", fg: "#ffffff" },
-  OpenAI: { short: "O", bg: "#0f172a", fg: "#ffffff" },
-  Alibaba: { short: "A", bg: "#f97316", fg: "#ffffff" },
-  xAI: { short: "x", bg: "#111827", fg: "#ffffff" },
-  Anthropic: { short: "An", bg: "#7c3aed", fg: "#ffffff" },
-  ByteDance: { short: "BD", bg: "#ef4444", fg: "#ffffff" },
+  OpenAI: { short: "O", bg: "#0f172a", fg: "#ffffff", logo: "gpt.png" },
+  Alibaba: { short: "A", bg: "#f97316", fg: "#ffffff", logo: "qwen.png" },
+  xAI: { short: "x", bg: "#111827", fg: "#ffffff", logo: "grok.png" },
+  Anthropic: { short: "An", bg: "#7c3aed", fg: "#ffffff", logo: "claude.png" },
+  ByteDance: { short: "BD", bg: "#ef4444", fg: "#ffffff", logo: "doubao.png" },
+  Google: { short: "G", bg: "#1a73e8", fg: "#ffffff", logo: "gemini.jpg" },
 };
 
 const RAW_RESULTS = [
@@ -192,19 +193,31 @@ function tdOrg(org) {
   const wrap = document.createElement("div");
   wrap.className = "org-cell";
 
-  // const logo = document.createElement("span");
-  // const meta = ORG_META[org] || {};
-  // logo.className = "org-logo";
-  // logo.textContent = meta.short || org.slice(0, 2);
-  // if (meta.bg) logo.style.setProperty("--logo-bg", meta.bg);
-  // if (meta.fg) logo.style.setProperty("--logo-fg", meta.fg);
-  // logo.setAttribute("aria-hidden", "true");
+  const meta = ORG_META[org] || {};
+
+  // Add logo image if available
+  if (meta.logo) {
+    const logoImg = document.createElement("img");
+    logoImg.className = "org-logo";
+    logoImg.src = `./assets/${meta.logo}`;
+    logoImg.alt = `${org} logo`;
+    logoImg.setAttribute("aria-hidden", "true");
+    wrap.appendChild(logoImg);
+  } else {
+    // Fallback to text logo
+    const logo = document.createElement("span");
+    logo.className = "org-logo";
+    logo.textContent = meta.short || org.slice(0, 2);
+    if (meta.bg) logo.style.setProperty("--logo-bg", meta.bg);
+    if (meta.fg) logo.style.setProperty("--logo-fg", meta.fg);
+    logo.setAttribute("aria-hidden", "true");
+    wrap.appendChild(logo);
+  }
 
   const name = document.createElement("span");
   name.className = "org-name";
   name.textContent = org;
 
-  // wrap.appendChild(logo);
   wrap.appendChild(name);
   el.appendChild(wrap);
   return el;
