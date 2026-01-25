@@ -658,11 +658,18 @@ a:hover {
   max-width: 90vw;
   max-height: 90vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
 }
 
+/* Use viewport units so tall images always fit; 85vh leaves room for close button */
 .modal-content img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
   object-fit: contain;
   border-radius: var(--radius-sm);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);

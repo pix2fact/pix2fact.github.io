@@ -377,10 +377,10 @@ const datasetState = {
 };
 
 function loadDataset() {
-  return fetch('./assets/data.json')
+  return fetch('./assets/pix2fact_0125.json')
     .then(response => response.json())
     .then(data => {
-      console.log("load data");
+      console.log("load data:", data);
       datasetData = data;
       datasetState.totalPages = Math.ceil(datasetData.length / datasetState.itemsPerPage);
       return datasetData;
