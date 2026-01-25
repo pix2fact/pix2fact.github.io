@@ -140,13 +140,16 @@ function setSortedHeader(tableEl, sortKey, sortDir) {
   });
 }
 
+const RANK_MEDALS = ["🥇", "🥈", "🥉"];
+
 function renderTableBody(tbodyEl, rows) {
   tbodyEl.innerHTML = "";
   rows.forEach((r, idx) => {
     const tr = document.createElement("tr");
     const rank = idx + 1;
+    const rankDisplay = rank <= 3 ? RANK_MEDALS[rank - 1] : String(rank);
 
-    tr.appendChild(td(String(rank)));
+    tr.appendChild(td(rankDisplay));
     tr.appendChild(tdStrong(r.model));
     tr.appendChild(tdOrg(r.org));
     // tr.appendChild(tdBadge(r.track));
@@ -300,8 +303,68 @@ function init() {
 
   sync();
 
+  // Initialize magnifier for teaser images
+  initMagnifiers();
+
+  // Initialize fullscreen buttons for teaser images
+  initFullscreenButtons();
+
   // Initialize dataset viewer
   initDatasetViewer();
+}
+
+const MAGNIFIER_ZOOM = 2.5;
+const MAGNIFIER_SIZE = 160;
+
+function initMagnifiers() {
+  const wraps = document.querySelectorAll(".magnifier-wrap");
+  wraps.forEach((wrap) => {
+    const img = wrap.querySelector("img[data-magnifier]");
+    const lens = wrap.querySelector(".magnifier-lens");
+    if (!img || !lens) return;
+
+    function updateLens(e) {
+      const rect = wrap.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      let w = rect.width;
+      let h = rect.height;
+      if (w <= 0) w = 1;
+      if (h <= 0) h = 1;
+
+      const half = MAGNIFIER_SIZE / 2;
+      const bgW = w * MAGNIFIER_ZOOM;
+      const bgH = h * MAGNIFIER_ZOOM;
+      const bx = x * MAGNIFIER_ZOOM - half;
+      const by = y * MAGNIFIER_ZOOM - half;
+
+      const src = (img.currentSrc || img.src).replace(/"/g, "%22");
+      lens.style.backgroundImage = `url("${src}")`;
+      lens.style.backgroundSize = `${bgW}px ${bgH}px`;
+      lens.style.backgroundPosition = `${-bx}px ${-by}px`;
+
+      const lensX = Math.max(half, Math.min(w - half, x));
+      const lensY = Math.max(half, Math.min(h - half, y));
+      lens.style.left = `${lensX - half}px`;
+      lens.style.top = `${lensY - half}px`;
+    }
+
+    wrap.addEventListener("mousemove", updateLens);
+  });
+}
+
+function initFullscreenButtons() {
+  const fullscreenBtns = document.querySelectorAll(".fullscreen-btn");
+  fullscreenBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent triggering magnifier
+      const wrap = btn.closest(".magnifier-wrap");
+      const img = wrap?.querySelector("img[data-magnifier]");
+      if (img) {
+        openModal(img.src);
+      }
+    });
+  });
 }
 
 // Dataset Viewer functionality
@@ -317,6 +380,7 @@ function loadDataset() {
   return fetch('./assets/data.json')
     .then(response => response.json())
     .then(data => {
+      console.log("load data");
       datasetData = data;
       datasetState.totalPages = Math.ceil(datasetData.length / datasetState.itemsPerPage);
       return datasetData;

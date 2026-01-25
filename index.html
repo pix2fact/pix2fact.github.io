@@ -8,14 +8,14 @@
       name="description"
       content="A research benchmark website template with a filterable leaderboard."
     />
-    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/logo1_pix2fact.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=2" />
   </head>
   <body>
     <header class="site-header">
@@ -24,10 +24,10 @@
           <div class="hero-title-row">
             <img
               class="hero-logo"
-              src="./assets/logo.svg"
+              src="./assets/logo1_pix2fact.png"
               alt="Project logo"
-              width="44"
-              height="44"
+              width="80"
+              height="80"
             />
             <h1 class="hero-title">From Pixels to Facts (Pix2Fact): Benchmarking Multi-Hop Reasoning for Fine-Grained Visual Fact Checking</h1>
           </div>
@@ -62,22 +62,27 @@
     <main>
       <section class="section container" id="teaser" aria-label="Teaser">
         <figure class="teaser">
-          <a href="./assets/fig2-dataset.pdf" target="_blank" class="teaser-link">
+          <div class="magnifier-wrap">
             <img
               class="teaser-image"
-              src="./assets/fig2-dataset.png"
+              src="./assets/teaser.png"
               alt="Dataset figure from research paper - Click to view PDF"
-              loading="lazy"
+              data-magnifier
             />
-          </a>
+            <div class="magnifier-lens" aria-hidden="true"></div>
+            <button class="fullscreen-btn" aria-label="View fullscreen" title="View fullscreen">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+              </svg>
+            </button>
+          </div>
           <figcaption class="teaser-caption">
-            The process of constructing Pix2Fact benchmark.
+            The scenarios and examples of Pix2Fact.
           </figcaption>
         </figure>
       </section>
-
       <section class="section container" id="introduction" aria-label="Introduction">
-        <h2 class="section-title">Introduction</h2>
+        <h2 class="section-title">Abstract</h2>
         <div class="prose">
           <p>
             Despite progress on general tasks, VLMs struggle with challenges demanding both detailed visual grounding and deliberate knowledge-based reasoning, a synergy not captured by existing benchmarks that evaluate these skills separately. To close this gap, we introduce <strong>Pix2Fact</strong>, a new visual question-answering benchmark designed to evaluate expert-level perception and knowledge-intensive multi-hop reasoning.
@@ -93,11 +98,36 @@
         </div>
       </section>
 
+      <section class="section container" id="teaser" aria-label="Teaser">
+        <figure class="teaser">
+            <h2 class="section-title">Method</h2>
+          <div class="magnifier-wrap">
+            <img
+              class="teaser-image"
+              src="./assets/fig2-dataset.png"
+              alt="Dataset figure from research paper"
+              data-magnifier
+            />
+            <div class="magnifier-lens" aria-hidden="true"></div>
+            <button class="fullscreen-btn" aria-label="View fullscreen" title="View fullscreen">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+              </svg>
+            </button>
+          </div>
+          <figcaption class="teaser-caption">
+            The process of constructing Pix2Fact benchmark.
+          </figcaption>
+        </figure>
+      </section>
+
+      
+
       <section class="section container" id="leaderboard" aria-label="Leaderboard">
         <div class="section-title-row">
           <h2 class="section-title">Leaderboard</h2>
           <p class="section-note">
-            Accuracy results updated from the latest model report.
+            Contact us for reporting your results.
           </p>
         </div>
 
@@ -166,7 +196,7 @@
         <div class="section-title-row">
           <h2 class="section-title">Dataset Viewer</h2>
           <p class="section-note">
-            Browse through the dataset samples to understand the task format.
+            Browse through the dataset samples.
           </p>
         </div>
 
@@ -210,11 +240,11 @@
         <h2 class="section-title">Citation</h2>
         <div class="callout">
           <p class="muted">
-            Add your BibTeX here. This is a placeholder snippet.
+            If this project helps your research, please cite:
           </p>
-          <pre class="code" aria-label="BibTeX placeholder"><code>@article{benchmark_placeholder,
-  title   = {Benchmark Title (Placeholder)},
-  author  = {Author A and Author B and Author C and Author D},
+          <pre class="code" aria-label="BibTeX placeholder"><code>@article{pix2fact,
+  title   = {From Pixels to Facts (Pix2Fact): Benchmarking Multi-Hop Reasoning for Fine-Grained Visual Fact Checking},
+  author  = {Anonymous Authors},
   journal = {arXiv},
   year    = {2026}
 }</code></pre>
@@ -225,7 +255,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="muted">
-          © <span id="year"></span> Benchmark (Placeholder) · Built for research communication.
+          © <span id="year"></span> Pix2Fact
         </div>
         <div class="footer-links">
           <a href="#introduction">Intro</a>
@@ -236,7 +266,7 @@
       </div>
     </footer>
 
-    <script src="./script.js" defer></script>
+    <script src="./script.js?v=3" defer></script>
 
     <!-- Fullscreen Image Modal -->
     <div class="modal" id="imageModal">

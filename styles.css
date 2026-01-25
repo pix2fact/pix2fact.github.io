@@ -170,6 +170,14 @@ a:hover {
   margin: 0;
 }
 
+.magnifier-wrap {
+  position: relative;
+  display: block;
+  overflow: visible;
+  cursor: crosshair;
+  min-height: 120px;
+}
+
 .teaser-image {
   width: 100%;
   border-radius: var(--radius);
@@ -177,6 +185,68 @@ a:hover {
   box-shadow: var(--shadow);
   background: #fff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: block;
+}
+
+/* Magnifier lens: local zoom on hover */
+.magnifier-lens {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.12s ease, visibility 0.12s ease;
+  z-index: 10;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.magnifier-wrap:hover .magnifier-lens {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Fullscreen button for teaser images */
+.fullscreen-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.magnifier-wrap:hover .fullscreen-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fullscreen-btn:hover {
+  background: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.fullscreen-btn:active {
+  transform: scale(0.95);
 }
 
 .teaser-link {

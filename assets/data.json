@@ -1,7 +1,502 @@
 [
-    {
-        "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/003bf48c-27ff-4fc3-9910-e838b8c57982.jpg",
-        "qustion": "Let x be the number of letters in the first word to the right of “Using” in the image. According to the QS World University Rankings 2026, which university is ranked x‑th globally?",
-        "answer": "ETH Zurich"
-    }
+  {
+    "question": "If the number of letters to the left of the letter 'Eye' represents the month and the number of letters to the right represents the date, what is the closing point of the Shanghai Composite Index on that day in 2025?",
+    "answer": "3402.32",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/eb092a16-e462-4986-be97-ae3bd8df3d1b.jpg"
+  },
+  {
+    "question": "Identify the title of the movie series that contains the word 'space' in the picture. What was the GDP growth rate of China in the year when the first movie of the series was released in the USA?",
+    "answer": "9.7%",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/4c39d072-3f48-40d3-9eba-78a83cbb2dc8.jpg"
+  },
+  {
+    "question": "How many years is the difference between the establishment dates of the organization on the logo directly above the cheetah and the organization on the logo adjacent to the left of this logo?",
+    "answer": "90 years",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/83965b55-e546-47ea-905a-ecbf2d5ac6bf.jpg"
+  },
+  {
+    "question": "Identify the number of lines of text printed against the white background of the sticker on the table and denote this number as x. What is the x-th word in the body of the report titled “STATISTICAL COMMUNIQUÉ OF THE PEOPLE'S REPUBLIC OF CHINA ON THE 2024 NATIONAL ECONOMIC AND SOCIAL DEVELOPMENT”, which was published on 28 February 2025? NOTE: numbers also count as words.",
+    "answer": "anniversary",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/a55a49aa-fb52-47b0-a997-d449a72177b6.jpg"
+  },
+  {
+    "question": "Assuming that the number of emerald green ring jewelry pieces in the picture is x, how much was the quarterly revenue of the brand of electronic pen (original product) used in the picture in fiscal 2025, quarter x?",
+    "answer": "$124.3 billion",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/ee266505-587f-48f1-81d2-75064455d7be.jpg"
+  },
+  {
+    "question": "Identify the number of round objects without any holes in their centre on the person's shoulder and denote this number by x. What is the x-th best university worldwide in 2026, as ranked by QS?",
+    "answer": "Stanford University",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/9a1c6c3f-c888-4eb5-b037-d8628fa602b4.jpg"
+  },
+  {
+    "question": "Assume that the number of white Chinese characters in the red background below the little girl drinking water in the picture is x. What was the x-th best university worldwide in 2026, as ranked by QS?",
+    "answer": "University College London (UCL)",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/2da9ec6d-6e8b-4683-a596-31e5f743f1e0.jpg"
+  },
+  {
+    "question": "The license plate in the picture contains four digits. Let x represent the first two digits. As of August 25, 2025, which city in China ranks x-th in population?",
+    "answer": "Jinan",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/9f1c86e8-fe44-4bb9-8b81-0a61cda2d4a4.jpg"
+  },
+  {
+    "question": "In the image, there is a fruit whose name starts with the letter ‘c’. Identify the world’s largest producer of that fruit. As of August 1, 2025, according to UK government travel advice, how many volcanoes in that country are travelers advised to avoid?”",
+    "answer": "6",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/cc2b5171-502d-4ad8-806d-03a29ee476eb.jpg"
+  },
+  {
+    "question": "Locate the text that includes the number “5” in the image, identify the brand of the object containing that text, and state how many number of treasury stock this brand held as of June 30, 2025.",
+    "answer": "1,194,621,195 shares",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/ec1c8bee-977a-41c6-91c8-1781413c8c70.jpg"
+  },
+  {
+    "question": "First, find the smallest positive integer less than 10 in the image. According to the QS World University Rankings 2025, how many articles did the university ranked at that exact number publish in the American Journal of Human Genetics between May 1, 2024 and April 30, 2025?",
+    "answer": "25",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/de484bb3-4a3c-4d6b-a930-b79cc568bc53.jpg"
+  },
+  {
+    "question": "On the sixth floor, mark the largest two-digit number in the visible range as x; which university is ranked xth in the QS World University Rankings 2026: Top global universities?",
+    "answer": "The University of Auckland",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/fa7fbd2a-722d-4d86-a510-9766924dac2f.jpg"
+  },
+  {
+    "question": "Please identify the sole hand accessory in the image, and answer the number of subscribers to the official YouTube account of the most well-known brand of that accessory, starting with the letter 'O', as of 23 August 2025. Round to the nearest 1 k.",
+    "answer": "417 k",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/e6fbd64e-d359-4752-a9d4-367013391106.jpg"
+  },
+  {
+    "question": "What is the difference in geographic latitude between the capital of the country where the parent company of the car brand in the picture is located and the capital of the country where the place name on the store sign is located? Round to the nearest integer.",
+    "answer": "2",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/6ae28df3-751f-4c65-8206-3492611bf59a.jpg"
+  },
+  {
+    "question": "In the picture, the number of cars is the month and the speed limit is the day. At what point did the Shanghai Composite Index of Chinese stocks close on that day?",
+    "answer": "3279.03",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/447a8346-0386-4491-be2b-0d7c6c74c5e0.jpg"
+  },
+  {
+    "question": "The number of cars represents the month, and the number of people represents the date. What will be the closing point of the Shanghai Composite Index in China on the morning of 2025?",
+    "answer": "3332.27",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/4acff575-c941-4981-b235-f781d3e49a37.jpg"
+  },
+  {
+    "question": "Identify the number in the hotel address shown in the picture and denote it as x. Based on the region where the hotel is located, determine which province in that region ranks x-th in life expectancy in 2024.",
+    "answer": "Metropolitan City of Milan",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/22d041ae-8d47-409b-99a1-f49eedc6f6b0.jpg"
+  },
+  {
+    "question": "Please identify the largest single Arabic numeral appearing in the image, and state the date (yyyy/mm) of the most recent Science Advances magazine research article title featuring the celestial body ranked at that number in mass in the Solar System, as of 2025/8/8.",
+    "answer": "2023/3",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/e441398e-5493-4901-82b6-d77119b526e2.jpg"
+  },
+  {
+    "question": "Find the sign with white text on a brown background in the image and identify the brand name. If you have questions or comments and want to contact the organization with the same name, what is its official contact email address?",
+    "answer": "cassidi@stls.frb.org",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/79d011f3-488d-4ed3-a94e-d4ba48097508.jpg"
+  },
+  {
+    "question": "Assume that the number of potted plants with flower pots visible in the picture is x. Then, among the countries shown in the picture, which city has the x-th urban population ranking in 2025?",
+    "answer": "Hiroshima",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/282d8b51-6ed4-4d7e-baae-16055ca7ea98.jpg"
+  },
+  {
+    "question": "What is the brand of the store that is the second one to the left of N109, and by how much did that brand’s biggest competitor’s (according to slideshare.net) revenue grow in fiscal 2024?",
+    "answer": "Michael Kors, 3%",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/1673c600-f8e1-40a5-a73d-6ca48e2d48bf.jpg"
+  },
+  {
+    "question": "Assume that the number of letters in the word beginning with \"v\" on the sign in the picture is \"x\". Then, which producer ranks x-th in wind electricity production in the Key World Energy Statistics 2021?",
+    "answer": "United Kingdom",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/24925371-67e8-4ebe-93e0-8b8f3570522d.jpg"
+  },
+  {
+    "question": "Suppose the number of letters in the first row of black words below “LOVE” in the figure is x; which country was ranked x‑th in the 2025 World Happiness Report?",
+    "answer": "Israel",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/d393f244-0176-44a1-9ad1-9b58fa0880fc.jpg"
+  },
+  {
+    "question": "Let x be the number of letters in the first word to the right of “Using” in the image. According to the QS World University Rankings 2026, which university is ranked x‑th globally?",
+    "answer": "ETH Zurich",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/003bf48c-27ff-4fc3-9910-e838b8c57982.jpg"
+  },
+  {
+    "question": "The white text on the yellow-green background is considered to be the fruit of a plant. What was the total value of China's imports of this species in US dollars in 2024?",
+    "answer": "2.386 billion",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/17edce4e-24d0-447e-bc8e-63e10b2222f0.jpg"
+  },
+  {
+    "question": "Locate the discount information displayed in red text on a white background. If the two digits that follow the slash are interpreted as x, what was the highest temperature (°C) in Huangpu District, Shanghai on August x, 2025",
+    "answer": "35°C",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/b39987d5-a431-43bf-8f88-ee706651e925.jpg"
+  },
+  {
+    "question": "Based on the red number on white background displayed next to the hanging red sign, which country occupied that position in the global gold reserves ranking in June 2025?",
+    "answer": "Euro Area",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/59f72a38-71cc-481d-81f6-9b829c6173ea.jpg"
+  },
+  {
+    "question": "Assuming that the number to the left of \"75\" is x, what was the closing point of the Shanghai Composite Index on August x, 2025?",
+    "answer": "3559.95",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/e27dc07c-d0ac-4557-9e85-41d98f7fe028.jpg"
+  },
+  {
+    "question": "Assume that the number of logos with \"R\" in the red circle is X. As of January 1, 2024, which city (not prefecture) in Japan has the X-th largest population?",
+    "answer": "Yokohama",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/68ed0a0a-bb97-4096-8d31-8954392b57f3.jpg"
+  },
+  {
+    "question": "Let the number of people wearing glasses in the picture be X. What is the temperature difference in degrees Celsius in Xi'an on August X, 2025?",
+    "answer": "10 ℃",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/103ea4f7-6d60-4157-90d0-334c11eb58a0.jpg"
+  },
+  {
+    "question": "In the image, the orange number above the number \"10\" on the whiteboard is designated as X. In 2024, which country ranks X in GDP?",
+    "answer": "Saudi Arabia",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/5501f91e-2fa0-4b9a-b706-05a1b268aef2.jpg"
+  },
+  {
+    "question": "Assume that the two digits following \"Everything\" in the picture represent the number x. Which country was ranked x-th in terms of gold reserves in the second quarter of 2025?",
+    "answer": "Poland",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/10f92499-19eb-47c9-ba82-16f06b2c8032.jpg"
+  },
+  {
+    "question": "Suppose the number of smaller English letters (including the ampersand “&”) on the sign above the pedestrian holding a white umbrella is x. Which country ranks x-th in the World Happiness Report 2025?",
+    "answer": "Switzerland",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/df4b1b41-19fc-42de-9311-5419f1ee8036.jpg"
+  },
+  {
+    "question": "Identify the hotel located behind the sign that says \"MASS\" in white letters on a black background. The hotel’s name is written in white capital letters. Let the number of letters in the first word of the hotel’s name be x. Which country ranks x-th in the World Happiness Report 2025?",
+    "answer": "Norway",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/1b0be7a0-9a34-4266-ab07-e3fed0ea6944.jpg"
+  },
+  {
+    "question": "Assume there are x payment QR codes in the image. What is the Global Peace Index (GPI) score of the country ranked x-th in the 2025 Global Peace Index? (Round to two decimal places)",
+    "answer": "1.10",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/4294d392-ffe0-4f0a-b0fa-8d8b8eb4a657.jpg"
+  },
+  {
+    "question": "Assume that the number of people wearing black hats with a little orange on them is x. Which country ranks x-th in the 2025 Global Peace Index?",
+    "answer": "Iceland",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/ff71faff-7396-4a4a-b93b-7ebc83a44812.jpg"
+  },
+  {
+    "question": "Identify the item held by the person with blond hair, a blue coat, and a white inner shirt; identify the company ranked first in 2024 global market share for that item. Answer the total number of pages in that company's 2024 Annual Report on Form 10-K.",
+    "answer": "121",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/7edd2b74-1034-4d5e-949e-340f4de3fd53.jpg"
+  },
+  {
+    "question": "Identify the number of teeth visible in the mouth of the person with a painted face in the picture and denote this number as x. Which country ranked x-th in terms of total medals won at the 12th World Games in 2025?",
+    "answer": "United States of America",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/dab4d5b9-71b6-4994-be2e-8ca7e3c41269.jpg"
+  },
+  {
+    "question": "Identify the number of letters printed on the T-shirt worn by the man with a black and yellow hat and denote this number as x. Which country ranked x-th fastest in terms of real GDP growth rate in 2025, as projected by the International Monetary Fund in April 2025?",
+    "answer": "Uganda",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/8b105517-654d-4a3e-888d-5b4875ef5b7a.jpg"
+  },
+  {
+    "question": "Count the number of two-way traffic signs visible in the image and denote this value as x. Answer how many times the works of the scholar ranked x in the editorial board of Cement and Concrete Research were cited in 2024.",
+    "answer": "2550",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/5f809bbb-1433-443b-97e7-c2db526f913c.jpg"
+  },
+  {
+    "question": "Assume a girl in a red outfit shows x teeth. Based on the festival depicted, in which city—within the country that includes the area where this festival originated—is ranked as the x-th largest by population in 2025? (As of August 25, 2025)",
+    "answer": "Palermo",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/18e00b02-3a4f-4cb7-a043-a02df1f96120.jpg"
+  },
+  {
+    "question": "To the right of the white car, there is a row of signs with white text on a black background. Assume the first number on the fourth sign from the bottom is x. Which university is ranked x-th in the QS World University Rankings 2026: Top global universities in the country shown in the picture?",
+    "answer": "Tokyo Institute of Technology (Tokyo Tech)",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/ac5e5f6c-2d00-4b69-94f3-2463a4e0c8d5.jpg"
+  },
+  {
+    "question": "The number of people on the road in the picture represents the month, while the total number of people represents the date. What was the closing value of the Shanghai Composite Index in China on this day in 2025? If the market is closed that day, please answer the closing point of the next trading day.",
+    "answer": "3206.92",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/914e6e26-0d2f-4538-841f-036012f66f23.jpg"
+  },
+  {
+    "question": "Assume that the number of words on the last line of the white rectangular strip of cloth in the picture is x. According to the 2024 GDP rankings published by the World Bank, what is the difference (in trillions of U.S. dollars) between the GDP of the country depicted in the image and the GDP of the country ranked x-th? (Keep two decimal places)",
+    "answer": "$2.84 trillion",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/eb4f37b1-51b1-46cb-93a8-f6e5077478c2.jpg"
+  },
+  {
+    "question": "Suppose the number of people wearing red shirts and white hats in the image is X. In the country where this building is located, which state ranks X in the 2025 Peace Index?",
+    "answer": "Yucatán",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/6706df9d-bdd1-47df-9d59-0f5e52b5dc6d.jpg"
+  },
+  {
+    "question": "Assume that the number of red lifebuoys visible in the picture is x; answer which country ranks x-th in the World Happiness Report 2025?",
+    "answer": "Finland",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/924eae23-e1ba-4dce-b3df-fdd24c47ed57.jpg"
+  },
+  {
+    "question": "The total number of traffic lights on the road in the picture represents the month, and the total number of cars represents the date. What was the closing value of the Shanghai Composite Index in China on this day in 2025?",
+    "answer": "3223.64",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/1d073790-843d-4a25-9868-f429174e5446.jpg"
+  },
+  {
+    "question": "Assume that the number of people walking in the parking lot is x. Which country is the airline ranked xth among the world’s most valuable airlines in 2024 from?",
+    "answer": "America",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/fd4b6ff3-891a-44fb-b8df-2dd64633f954.jpg"
+  },
+  {
+    "question": "Assuming there are X people in the relief above the three large central windows of the main building in the picture, what was the global box office revenue in USD of the movie ranked X-th in 2024?",
+    "answer": "492,162,604",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/f9078798-9492-4ba0-bba3-983c4944c9be.jpg"
+  },
+  {
+    "question": "Assume that the number of flags hanging on the building in the picture is x; then, please answer which country ranks x-th in electricity consumption among the leading countries in the world in 2024? (in terawatt-hours)",
+    "answer": "Brazil",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/6447958b-f3f4-464b-9304-c29a6d5ddb90.jpg"
+  },
+  {
+    "question": "Identify the house number on the left side of the picture and record it as x. As of August 23, 2025, which city has the x-th largest population in the country where this building is located?",
+    "answer": "Liepaja",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/a70ac846-78a8-4ef9-97e0-881e96f2e29c.jpg"
+  },
+  {
+    "question": "Find out the house number on the building on the left and call it x. Then according to the 2024 ‘Best Place To Live’ ranking for that country, which city is listed at position x, according to The Brussels Morning Newspaper.",
+    "answer": "Pavilosta",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/a2aee8d0-e4de-4e53-8fb3-df731cdd5274.jpg"
+  },
+  {
+    "question": "Determine the number of dark yellow hexagrams in the image and record it as x. Answer the highest wind speed in mph in London on day x of January 2024. (Please use \"mph\" and express it to the nearest integer)",
+    "answer": "17 mph",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/e9fbe13c-cf04-4b35-9839-d221159d33ce.jpg"
+  },
+  {
+    "question": "If the number of letters to the left of \"LEASE\" is X. How many industries in the United States contributed to the growth of real GDP in quarter X in 2024?",
+    "answer": "Fourteen",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/0b24dabb-794c-415a-a6b5-6da2d4d081e0.jpg"
+  },
+  {
+    "question": "Assume the number of bright yellow boats in the image is x. For the country shown, which city will rank x-th by population in 2025? (As of Aug 25, 2025)",
+    "answer": "Ajman",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/0abc9c17-09dd-4e30-a9a0-769cc44a275e.jpg"
+  },
+  {
+    "question": "Suppose the number of English letters in the first row of the red lettering on the white background on the right side of the picture is x; which country ranks x-th in the 2025 World Happiness Report?",
+    "answer": "Australia",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/006177a6-25fe-47c5-8e1f-9cf918da6d87.jpg"
+  },
+  {
+    "question": "Suppose the shape of a horse appears x times on top of the building shown in the picture. By how much did Mercedes‑Benz’s pre‑tax profit increase in 202x compared with the previous year? Accurate to 1%.",
+    "answer": "28%",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/31819c54-5005-416d-95ed-ea19c1dc5fa8.jpg"
+  },
+  {
+    "question": "Based on the time shown in the picture, let x be the number of hour (e.g., for 17:30 and 5:30, x=5). What is the sales volume of Xiaomi cars in the xth month of 2025?",
+    "answer": "28585",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/3bb249ba-3804-4d4d-8f8c-e60204b4c09d.jpg"
+  },
+  {
+    "question": "Please determine how many lifebuoys there are on the two ships closest to the camera, recorded as x. Which country was ranked x‑th in the 2025 World Happiness Report?",
+    "answer": "Sweden",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/8aaaa3b6-9dfb-4958-9ffd-3dc88d7e2d39.jpg"
+  },
+  {
+    "question": "Identify the number of birds in the picture and record it as x. Who was the x-th riches person in the world in July 2025?",
+    "answer": "Larry Ellison",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/94b3d2f6-198d-45db-8ac0-a38d03332f88.jpg"
+  },
+  {
+    "question": "Count the number of statues in the picture that are holding cross scepter, and denote this number as x. What object is circled in orange on page x of the 2024 Annual Report published by the country shown in the picture?",
+    "answer": "crown",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/28085328-79f6-4a8a-ad80-f23cdb7dcce3.jpg"
+  },
+  {
+    "question": "Identify the number of bright red lights on the tallest building in the picture and denote this number by x. Which country's GDP ranked the x-th largest worldwide in 2024?",
+    "answer": "France",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/451a0079-0a90-4b0f-b502-1dd6dd8b9a27.jpg"
+  },
+  {
+    "question": "Identify the number of illuminated red characters in the picture and denote this number by x. What is the x-th best university in Eastern Europe in 2025, as ranked by QS?",
+    "answer": "University of Warsaw",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/4440f26c-ae35-4afe-bb32-7668a9c45678.jpg"
+  },
+  {
+    "question": "On the billboard with a downward arrow, suppose the largest two-digit number is x; then, which country was ranked x in the World Happiness Report 2025?",
+    "answer": "Colombia",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/c94ad8be-31a1-4d3f-a296-151f25ff36db.jpg"
+  },
+  {
+    "question": "Let X be the number of letters in the word to the right of \"TUNG.\" What was the closing price of the Shanghai Composite Index on X/X/2025?",
+    "answer": "3385.36",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/0953b340-a952-41d0-914b-fae5ca2212dc.jpg"
+  },
+  {
+    "question": "There's a line of white words on top of a black building. Let the number of letters in the first word be x (for the month), and the number of letters in the second word be y (for the day). What was the closing value of the Shanghai Composite Index on x/y in 2025?",
+    "answer": "3371.92",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/e2667224-fd13-45d6-8e1d-a3741cae35e5.jpg"
+  },
+  {
+    "question": "Let x be the number of letters in the word(s) in the image that start with “J”. According to the 2024 international tourist-arrival rankings, what is the difference (in millions) between the number of international tourists to the country shown and the country ranked x-th?",
+    "answer": "34.9",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/176b7f5d-2ca9-4746-b0a9-01d2a9005a31.jpg"
+  },
+  {
+    "question": "Identify and infer the number of red cars in the picture, and denote this number as x. What is the title of the x-th article in the Financial Times (UK edition, newspaper) issued on 26 August 2025?",
+    "answer": "In harm's way: Journalists die in Israeli strike",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/978f0190-77da-453f-89ee-ec11a71de3eb.jpg"
+  },
+  {
+    "question": "Determine how many keys are visible in the image and denote this number as x. Identify the animal in the image. Identify the country with the x-th largest population of that animal in 2022. Then, answer how many long-term priorities are included in that country’s 2030 Strategy for Development.",
+    "answer": "7",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/544a2157-6a7d-473a-ad3f-bae798eae545.jpg"
+  },
+  {
+    "question": "Suppose the number of red flower pots in the picture is x. Which producer ranks x-th in natural gas production in Key World Energy Statistics 2021?",
+    "answer": "United States",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/075cc52d-080f-44be-9a6e-4e52bcd28314.jpg"
+  },
+  {
+    "question": "Assume that the second number to the right of \"BD\" is x (0-9). Then, which province in China ranks x-th by permanent population in 2024?",
+    "answer": "Zhejiang Province",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/eec88974-4f1e-4d8a-9258-bbc2f448ba94.jpg"
+  },
+  {
+    "question": "Assume the number next to \"f\" is x. Which province in China ranks x-th by permanent population in 2024?",
+    "answer": "Sichuan Province",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/d2f2b2f7-511c-4738-ac6b-ade7a239cfc8.jpg"
+  },
+  {
+    "question": "Suppose the number to the right of \"DEC\" on the street light sign is x. Then, what was the total population of the country where the street in the picture is located by the end of the year x?",
+    "answer": " 25,694,393 people",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/c282fcb1-dbc0-4a3f-b7f0-d5eb2bb71b6d.jpg"
+  },
+  {
+    "question": "The number to the left of the number \"5119\" represents the month, and the number to the right of the letters \"PASSAGE\" represents the date. What was the opening point of the Shanghai Composite Index on that day in 2025?",
+    "answer": "3340.71",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/ac227709-1569-4fc0-b649-be0eb70d7cc5.jpg"
+  },
+  {
+    "question": "Assume that the second number to the right of the number \"6\" is x (0-9). Then which province in China ranks x-th by permanent population in 2024?",
+    "answer": "Sichuan Province",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/d50a45e1-436b-437b-a1d3-d7ca4fdedcd2.jpg"
+  },
+  {
+    "question": "Assuming that the first number from left to right is x and the second number is y, based on the fifth car on the left, what is the sales volume of the iPhone 15 series in x month of 202y, according to Canalys?",
+    "answer": "3.3 million",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/eb6aa0df-5138-4791-b629-c438157fb907.jpg"
+  },
+  {
+    "question": "Assume that the number to the right of \"Y547\" is X (0-9). Then, which province in China ranks X in permanent population in 2024?",
+    "answer": "Henan Province",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/73e2a847-ac13-4a47-8cc2-3c571c307593.jpg"
+  },
+  {
+    "question": "Observe the silver logo above the number \"86.\" Which part of the factory was being built by the company to which the logo belonged when it was raided by U.S. Department of Homeland Security agents in September 2025?",
+    "answer": "Battery portion.",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/142a9a05-3ffa-4234-a468-01ae0159cd03.jpg"
+  },
+  {
+    "question": "On the box labeled “CHOCO,” look at the English word in the line directly below it. Take the first letter of this word and let its position in the 26-letter alphabet be x. Which competitor was ranked x-th in the World Rankings – Men’s Overall Ranking according to worldathletics.org (as of September 2, 2025)?",
+    "answer": "Niels LAROS",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/b0b24c3f-05f7-4383-8471-c06699c0d5f7.jpg"
+  },
+  {
+    "question": "To the left of an orange object is a four-digit number with white text on a green background. Assume the second-to-last digit of this four-digit number is x. As of September 12, 2025, which country was ranked x-th in the world's population density (P/Km²) ranking from highest to lowest?",
+    "answer": "Maldives",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/59010f2d-a1fd-4251-8959-e0a8d5fb4478.jpg"
+  },
+  {
+    "question": "Please observe the number to the right of the letter \"A\" at the lower right corner of the number \"181\". On September 5, 2025, how many goals had the player with this number scored for the Argentina national football team in the South American qualifiers for the 2026 World Cup?",
+    "answer": "Two.",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/dc880b9f-f143-40b1-8c78-b22038726f06.jpg"
+  },
+  {
+    "question": "Find the book with an orange spine whose title starts with the word ‘ON’, count the number of letters in its title, and denote this number as x. What is the x-th best university worldwide in 2026 according to the QS ranking?",
+    "answer": "California Institute of Technology (Caltech)",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/73396384-532e-4482-9002-2a522808652b.jpg"
+  },
+  {
+    "question": "Identify the first letter following the letters “Literatu”. Taking this letter’s position in the 26-letter alphabet, which film corresponds to that rank in the 2025 worldwide box office rankings, as of 16 September, 2025?",
+    "answer": "The Super Mario Bros. Movie",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/58b144e6-8d4d-4fd5-ae17-81c91582596c.jpg"
+  },
+  {
+    "question": "After the letters “NATURA,” there is another letter. Taking this letter’s position in the 26-letter alphabet, which country corresponds to that position in the 2025 world population rankings？",
+    "answer": "Japan",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/f08e2407-f712-4de6-bfcd-a5dbecc41d75.jpg"
+  },
+  {
+    "question": "The book is located below a colorful book with a black background and a glowing line pattern. Identify the first letter in the last line of the cover title and determine its position in the 26-letter alphabet, denoted as x. Which country was ranked x-th by numbers of NBA Players – Historic Players (2024) list, according to worldpopulationreview?",
+    "answer": "Puerto Rico",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/74613904-c517-4f77-9a6d-062bbfa8cd53.jpg"
+  },
+  {
+    "question": "To the right of \"3A\" is a price tag with a two-digit number on it. Let the first digit of this number be x. Which country/region ranked x-th in the 2024 NBA player count ranking (grouped by country/region)?",
+    "answer": "Australia",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/8315cf0a-4739-48cc-99d8-a765ad9ba9d7.jpg"
+  },
+  {
+    "question": "Identify the number that follows the capital letters 'RE' in the picture and denote this number as x. What is the first English word on the x-th page of the PDF file of Apple Inc.'s FY2024 Form 10-K?",
+    "answer": "Dividend",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/3e272dff-aa8a-49b6-8336-302ce31c4b03.jpg"
+  },
+  {
+    "question": "After “400,” there is another number. In world population rankings, which country corresponds to that number, as of 15th September 2025?",
+    "answer": "Bangladesh",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/0f3e62cb-d80d-4f5b-b515-3fc08685824f.jpg"
+  },
+  {
+    "question": "Identify the first digit immediately to the left of \".80\" in the image and denote it as x. In the 2025 ranking of countries by the population's yearly change, ordered from highest to lowest (positive to negative), which country was ranked x-th? (As of September 12, 2025)",
+    "answer": "Oman",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/62a6ffa3-7f28-4236-b860-b46d19c8c65d.jpg"
+  },
+  {
+    "question": "Identify the first digit immediately to the right of \"Z201\" in the image and denote it as x. In the 2025 ranking of countries by the population's yearly change, ordered from highest to lowest (positive to negative), which country was ranked x-th? (As of September 12, 2025)",
+    "answer": "Niger",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/518b5ad0-f198-4cc8-b1df-9809652546ab.jpg"
+  },
+  {
+    "question": "On a red label with white text, there's a text consisting of a digit and a letter. Let x be the number before the letter \"F.\" As of September 12, 2025, which country/region ranks x-th in the world in terms of population density (P/Km²), from highest to lowest?",
+    "answer": "Singapore",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/d59edb51-11b4-4cf5-824f-92919a2ca039.jpg"
+  },
+  {
+    "question": "Count the total number of people wearing dark blue top in the image and set this number as x. In the Sanlida World Ranking – Compound Men Individual, dated August 4, 2025, which athlete was ranked x-th?",
+    "answer": "Mike Schloesser",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/4f804a16-8d6b-4101-8d43-321b7f947db8.jpg"
+  },
+  {
+    "question": "Count the total number of people in the picture holding a child and let this number be x. Which team is ranked x-th in the AP Top 25 of the Men's College Basketball Rankings in the 2023–24 season?",
+    "answer": " UConn",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/026de9fa-2ead-4022-9606-1a028a35ad75.jpg"
+  },
+  {
+    "question": "Suppose the two-digit number in white on a blue background in the picture is x. What is the name of the movie that ranks x-th in the 2024 Worldwide Box Office?",
+    "answer": "Yolo",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/41a19ac6-ad8a-40ad-95a8-08e9769028a2.jpg"
+  },
+  {
+    "question": "Count the total number of people wearing red hats in the picture and let this number be x. Which athlete was ranked x-th in the Men’s Artistic Gymnastics Challenge Cup Ranking 2023?",
+    "answer": "MESZAROS Krisztofer ",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/92661477-4fbf-4c3b-a172-4505a2232de9.jpg"
+  },
+  {
+    "question": "After the text “52OO,” there is another letter. Taking this letter’s position in the 26-letter alphabet, which film corresponds to that position in the worldwide box office rankings by lifetime grosses, as of 15 September, 2025?",
+    "answer": "Furious 7",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/83715839-eaac-4caa-b563-360e374552e7.jpg"
+  },
+  {
+    "question": "Which country in the Total GHG Emissions (2023) in the World Ranking corresponds to total number of letters in the second row of English words displayed on the middle part of a building?",
+    "answer": "Germany",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/05619974-29e4-4b4a-8ff2-e2c853f0891a.jpg"
+  },
+  {
+    "question": "Identify the first letter of the word that comes before 'Br' on the green road sign in the picture, and denote its position in the 26-letter English alphabet as x. Based on this value of x, what is the x-th ranked movie in the 2025 Worldwide Box Office as of September 15, 2025?",
+    "answer": "Lilo & Stitch",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/36fa0fff-4b33-4e5b-82be-8f62cfd9691b.jpg"
+  },
+  {
+    "question": "Identify the digit (0–9) in the image that is farthest from the letter \"H\" and denote it as x. In the QS World University Rankings 2026, ordered by overall score from highest to lowest, what is the overall score of the university ranked x-th?",
+    "answer": "95.9",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/e29c657a-44cc-41b3-adbc-f25d47db2e7a.jpg"
+  },
+  {
+    "question": "Identify the last two digits of a year shown in the image and denote them as x. In the QS World University Rankings 2026, ordered by overall score from highest to lowest, what is the overall score of the university ranked x-th?",
+    "answer": "93.7",
+    "image": "https://huggingface.co/datasets/Bofeee5675/Pix2Fact100Subset/resolve/main/c7cfaa1a-3ecf-4fb1-9564-4b92f5f12328.jpg"
+  }
 ]
