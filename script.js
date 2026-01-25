@@ -314,6 +314,7 @@ function init() {
 }
 
 const MAGNIFIER_ZOOM = 2.5;
+const DATASET_MAGNIFIER_ZOOM = 4.0; // Higher zoom for dataset viewer
 const MAGNIFIER_SIZE = 160;
 
 function initMagnifiers() {
@@ -322,6 +323,10 @@ function initMagnifiers() {
     const img = wrap.querySelector("img[data-magnifier]");
     const lens = wrap.querySelector(".magnifier-lens");
     if (!img || !lens) return;
+
+    // Check if this is a dataset viewer magnifier
+    const isDatasetViewer = wrap.closest('.dataset-item') !== null;
+    const zoom = isDatasetViewer ? DATASET_MAGNIFIER_ZOOM : MAGNIFIER_ZOOM;
 
     function updateLens(e) {
       const rect = wrap.getBoundingClientRect();
@@ -333,10 +338,10 @@ function initMagnifiers() {
       if (h <= 0) h = 1;
 
       const half = MAGNIFIER_SIZE / 2;
-      const bgW = w * MAGNIFIER_ZOOM;
-      const bgH = h * MAGNIFIER_ZOOM;
-      const bx = x * MAGNIFIER_ZOOM - half;
-      const by = y * MAGNIFIER_ZOOM - half;
+      const bgW = w * zoom;
+      const bgH = h * zoom;
+      const bx = x * zoom - half;
+      const by = y * zoom - half;
 
       const src = (img.currentSrc || img.src).replace(/"/g, "%22");
       lens.style.backgroundImage = `url("${src}")`;
@@ -372,7 +377,7 @@ let datasetData = [];
 const datasetState = {
   searchQuery: "",
   currentPage: 1,
-  itemsPerPage: 10,
+  itemsPerPage: 5,
   totalPages: 1,
 };
 
@@ -413,12 +418,42 @@ function renderDatasetItem(item) {
 
   const imageDiv = document.createElement('div');
   imageDiv.className = 'dataset-image';
+  
+  // Create magnifier wrap container
+  const magnifierWrap = document.createElement('div');
+  magnifierWrap.className = 'magnifier-wrap';
+  
   const img = document.createElement('img');
   img.src = item.image;
   img.alt = 'Dataset sample image';
   img.loading = 'lazy';
-  img.addEventListener('click', () => openModal(item.image));
-  imageDiv.appendChild(img);
+  img.setAttribute('data-magnifier', '');
+  img.className = 'dataset-image-img';
+  
+  // Create magnifier lens
+  const magnifierLens = document.createElement('div');
+  magnifierLens.className = 'magnifier-lens';
+  magnifierLens.setAttribute('aria-hidden', 'true');
+  
+  // Create fullscreen button
+  const fullscreenBtn = document.createElement('button');
+  fullscreenBtn.className = 'fullscreen-btn';
+  fullscreenBtn.setAttribute('aria-label', 'View fullscreen');
+  fullscreenBtn.setAttribute('title', 'View fullscreen');
+  fullscreenBtn.innerHTML = `
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+    </svg>
+  `;
+  fullscreenBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    openModal(item.image);
+  });
+  
+  magnifierWrap.appendChild(img);
+  magnifierWrap.appendChild(magnifierLens);
+  magnifierWrap.appendChild(fullscreenBtn);
+  imageDiv.appendChild(magnifierWrap);
 
   const contentDiv = document.createElement('div');
   contentDiv.className = 'dataset-content';
@@ -462,6 +497,9 @@ function renderDatasetItems(items) {
     const itemElement = renderDatasetItem(item);
     container.appendChild(itemElement);
   });
+  
+  // Re-initialize magnifiers for newly rendered items
+  initMagnifiers();
 }
 
 function updateDatasetPagination() {

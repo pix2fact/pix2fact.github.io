@@ -574,18 +574,25 @@ a:hover {
   align-items: flex-start;
 }
 
-.dataset-image img {
+.dataset-image .magnifier-wrap {
+  width: 100%;
+}
+
+.dataset-image .magnifier-wrap img {
   width: 100%;
   height: auto;
   border-radius: var(--radius-sm);
   object-fit: cover;
-  cursor: pointer;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background: #fff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: block;
 }
 
-.dataset-image img:hover {
+.dataset-image .magnifier-wrap:hover img {
   transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
 }
 
 .dataset-content {
