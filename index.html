@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>From Pixels to Facts (Pix2Fact): Benchmarking Multi-Hop Reasoning for Fine-Grained Visual Fact Checking</title>
+    <title>Pix2Fact: When Vision Is Not Enough — Benchmarking Fine-Grained VQA with Web Verification on High-Resolution Real-World Scenes</title>
     <meta
       name="description"
       content="A research benchmark website template with a filterable leaderboard."
@@ -38,7 +38,7 @@
               width="80"
               height="80"
             />
-            <h1 class="hero-title">From Pixels to Facts (Pix2Fact): Benchmarking Multi-Hop Reasoning for Fine-Grained Visual Fact Checking</h1>
+            <h1 class="hero-title">Pix2Fact: When Vision Is Not Enough —<br />Benchmarking Fine-Grained VQA with Web<br />Verification on High-Resolution Real-World Scenes</h1>
           </div>
 
           <div class="authors" aria-label="Authors">
@@ -94,15 +94,7 @@
         <h2 class="section-title">Abstract</h2>
         <div class="prose">
           <p>
-            Despite progress on general tasks, VLMs struggle with challenges demanding both detailed visual grounding and deliberate knowledge-based reasoning, a synergy not captured by existing benchmarks that evaluate these skills separately. To close this gap, we introduce <strong>Pix2Fact</strong>, a new visual question-answering benchmark designed to evaluate expert-level perception and knowledge-intensive multi-hop reasoning.
-          </p>
-
-          <p>
-            Pix2Fact contains 1,000 high-resolution (4K+) images spanning 8 daily-life scenarios and situations, with questions and answers meticulously crafted by annotators holding PhDs from top global universities working in partnership with a professional data annotation firm. Each question requires detailed visual grounding, multi-hop reasoning, and the integration of external knowledge to answer.
-          </p>
-
-          <p>
-            Our evaluation of 9 state-of-the-art VLMs, including proprietary models like Gemini-3-Pro and GPT-5, reveals the substantial challenge posed by Pix2Fact: the most advanced model achieves only 25.0% average accuracy, in stark contrast to human performance of 45.7%. This significant gap underscores the limitations of current models in replicating human-level visual comprehension. We believe Pix2Fact will serve as a critical benchmark to drive the development of next-generation multimodal agents that combine fine-grained perception with robust, knowledge-based reasoning.
+            Despite progress on general tasks, vision-language models (VLMs) still struggle with challenges that demand both fine-grained visual grounding and external knowledge, a synergy overlooked by existing benchmarks that evaluate these abilities in isolation. To fill this void, we introduce <strong>Pix2Fact</strong>, a visual question-answering benchmark designed to assess expert-level visual perception and knowledge search. Pix2Fact comprises 1,000 high-resolution (4K+) images spanning eight scenarios. Its questions and answers are meticulously crafted by PhD-holding annotators from top global universities across diverse disciplines. Each question requires detailed visual grounding and the integration of external knowledge. Evaluating ten state-of-the-art VLMs, including proprietary models such as Gemini-3.1-Pro and GPT-5.4, we find that Pix2Fact poses a formidable challenge: the most advanced model (Gemini-3.1-Pro) achieves only 51.7% average accuracy, even with access to visual ground truth and search tools. Our analysis attributes this low accuracy to three factors, frequent visual grounding errors even with visual ground truth, shallow search harnessing, and VLM's inability to retrieve long-tail, unstructured local information. This striking gap exposes the limitations of current models in assisting humans with real-world scenarios that demand overwhelming visual comprehension. We believe Pix2Fact will serve as a critical benchmark to drive the next generation of language-vision agents that seamlessly integrate fine-grained perception with robust knowledge search.
           </p>
         </div>
       </section>

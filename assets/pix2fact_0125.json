@@ -1,502 +1,502 @@
 [
   {
-    "question": "If the number of letters to the left of the letter 'Eye' represents the month and the number of letters to the right represents the date, what is the closing point of the Shanghai Composite Index on that day in 2025?",
-    "answer": "3402.32",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/eb092a16-e462-4986-be97-ae3bd8df3d1b.jpg"
+    "question": "If someone wants to make enquiries about the ship at the bottom right of the image, which phone number should they call?",
+    "answer": "+44 (0)20 7491 1947",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/eb092a16-e462-4986-be97-ae3bd8df3d1b.jpg?download=true"
   },
   {
-    "question": "Identify the title of the movie series that contains the word 'space' in the picture. What was the GDP growth rate of China in the year when the first movie of the series was released in the USA?",
-    "answer": "9.7%",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/4c39d072-3f48-40d3-9eba-78a83cbb2dc8.jpg"
+    "question": "I noticed in the picture there is a recreational activity starting with the letter \"w\". I'm quite interested in it. I plan to visit this amusement park on April 3rd, 2026. What are the opening hours for this activity? (xam-ypm)",
+    "answer": "8am-9:pm\n",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/4c39d072-3f48-40d3-9eba-78a83cbb2dc8.jpg?download=true"
   },
   {
-    "question": "How many years is the difference between the establishment dates of the organization on the logo directly above the cheetah and the organization on the logo adjacent to the left of this logo?",
-    "answer": "90 years",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/83965b55-e546-47ea-905a-ecbf2d5ac6bf.jpg"
+    "question": "There appears to be an animal welfare organization’s logo on the animal-themed carousel. If I want to apply to become a volunteer for that organization, how much is the training fee (in USD)?",
+    "answer": "15",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/83965b55-e546-47ea-905a-ecbf2d5ac6bf.jpg?download=true"
   },
   {
-    "question": "Identify the number of lines of text printed against the white background of the sticker on the table and denote this number as x. What is the x-th word in the body of the report titled “STATISTICAL COMMUNIQUÉ OF THE PEOPLE'S REPUBLIC OF CHINA ON THE 2024 NATIONAL ECONOMIC AND SOCIAL DEVELOPMENT”, which was published on 28 February 2025? NOTE: numbers also count as words.",
-    "answer": "anniversary",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/a55a49aa-fb52-47b0-a997-d449a72177b6.jpg"
+    "question": "I really love the style of that 'Once upon a forest' piece in the picture — it actually makes me want to get something from their official site. Just wondering, for the most expensive item they sell online, how many different styles does it come in?",
+    "answer": "4",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/a55a49aa-fb52-47b0-a997-d449a72177b6.jpg?download=true"
   },
   {
-    "question": "Assuming that the number of emerald green ring jewelry pieces in the picture is x, how much was the quarterly revenue of the brand of electronic pen (original product) used in the picture in fiscal 2025, quarter x?",
-    "answer": "$124.3 billion",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/ee266505-587f-48f1-81d2-75064455d7be.jpg"
+    "question": "I'm in touch with the company whose logo in the picture looks a bit like a butterfly. I know this group has long placed importance on sustainability. As of April 17, 2026, how many of its subsidiaries had published sustainability reports on the parent group’s official website?",
+    "answer": "17",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/7cf74bb2-fe77-46f3-8503-b108d0710665.jpg?download=true"
   },
   {
-    "question": "Identify the number of round objects without any holes in their centre on the person's shoulder and denote this number by x. What is the x-th best university worldwide in 2026, as ranked by QS?",
-    "answer": "Stanford University",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/9a1c6c3f-c888-4eb5-b037-d8628fa602b4.jpg"
+    "question": "For the racing game machine with the blue and black seat in the image, how many tracks can I unlock in total? ",
+    "answer": "12",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/48a9c660-1895-49f5-b503-aa69666ea489.jpg?download=true"
   },
   {
-    "question": "Assume that the number of white Chinese characters in the red background below the little girl drinking water in the picture is x. What was the x-th best university worldwide in 2026, as ranked by QS?",
-    "answer": "University College London (UCL)",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/2da9ec6d-6e8b-4683-a596-31e5f743f1e0.jpg"
+    "question": "There are some bottled waters above the elderly man’s head in the image. What is the brand’s official ordering phone number in China?",
+    "answer": "95077",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/2da9ec6d-6e8b-4683-a596-31e5f743f1e0.jpg?download=true"
   },
   {
-    "question": "The license plate in the picture contains four digits. Let x represent the first two digits. As of August 25, 2025, which city in China ranks x-th in population?",
-    "answer": "Jinan",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/9f1c86e8-fe44-4bb9-8b81-0a61cda2d4a4.jpg"
+    "question": "I would like to book an appointment at the Chinese clinic shown in the picture, but the telephone number appears to be outdated. Could you please check it for me?",
+    "answer": "+852 2388 7831",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/9f1c86e8-fe44-4bb9-8b81-0a61cda2d4a4.jpg?download=true"
   },
   {
-    "question": "In the image, there is a fruit whose name starts with the letter ‘c’. Identify the world’s largest producer of that fruit. As of August 1, 2025, according to UK government travel advice, how many volcanoes in that country are travelers advised to avoid?”",
-    "answer": "6",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/cc2b5171-502d-4ad8-806d-03a29ee476eb.jpg"
+    "question": "On the right side of the image, there is a male and a female staff member wearing the same uniform. What is the official customer service phone number of the product brand they represent?",
+    "answer": "+34 933 183 529",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/cc2b5171-502d-4ad8-806d-03a29ee476eb.jpg?download=true"
   },
   {
-    "question": "Locate the text that includes the number “5” in the image, identify the brand of the object containing that text, and state how many number of treasury stock this brand held as of June 30, 2025.",
-    "answer": "1,194,621,195 shares",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/ec1c8bee-977a-41c6-91c8-1781413c8c70.jpg"
+    "question": "The motorcycle brand in the picture looks pretty good, and I'm thinking of getting a new scooter. As of today (2026-04-16), could you tell me what engine the cheapest scooter they offer comes with? I'd like to use that to help decide.",
+    "answer": "49cc single-cylinder four-stroke engine",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/ec1c8bee-977a-41c6-91c8-1781413c8c70.jpg?download=true"
   },
   {
-    "question": "First, find the smallest positive integer less than 10 in the image. According to the QS World University Rankings 2025, how many articles did the university ranked at that exact number publish in the American Journal of Human Genetics between May 1, 2024 and April 30, 2025?",
-    "answer": "25",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/de484bb3-4a3c-4d6b-a930-b79cc568bc53.jpg"
+    "question": "I saw a flag on the right side of the picture. This is a flag of an organization, and I have some suggestions for this organization. I am currently in France and want to contact the organization by phone to give my suggestions. What is the contact number of this organization?",
+    "answer": "+32 22 99 96 96",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/3c35908e-0249-4bfd-a3a7-50cdf82c208c.jpg?download=true"
   },
   {
-    "question": "On the sixth floor, mark the largest two-digit number in the visible range as x; which university is ranked xth in the QS World University Rankings 2026: Top global universities?",
-    "answer": "The University of Auckland",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/fa7fbd2a-722d-4d86-a510-9766924dac2f.jpg"
+    "question": "Identify the book category starting with \"L\" above the emergency exit in the picture. I'm interested in this book category. According to Publishers Weekly's 2024 list, what was the name of the first book by the bestselling author in this category?",
+    "answer": "A Handful of Heaven",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/fa7fbd2a-722d-4d86-a510-9766924dac2f.jpg?download=true"
   },
   {
-    "question": "Please identify the sole hand accessory in the image, and answer the number of subscribers to the official YouTube account of the most well-known brand of that accessory, starting with the letter 'O', as of 23 August 2025. Round to the nearest 1 k.",
-    "answer": "417 k",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/e6fbd64e-d359-4752-a9d4-367013391106.jpg"
+    "question": "I’m very interested in the environments in which writers grow up. I would like to know: what is the population in 2025 of the main city where the writer on the green banner lived? Round to nearest thousand.",
+    "answer": "1,500,000",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/e6fbd64e-d359-4752-a9d4-367013391106.jpg?download=true"
   },
   {
-    "question": "What is the difference in geographic latitude between the capital of the country where the parent company of the car brand in the picture is located and the capital of the country where the place name on the store sign is located? Round to the nearest integer.",
-    "answer": "2",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/6ae28df3-751f-4c65-8206-3492611bf59a.jpg"
+    "question": "There’s a delivery truck shown in the image. If I place an order with this company, how many days will it take for the delivery to arrive?",
+    "answer": "1",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/6ae28df3-751f-4c65-8206-3492611bf59a.jpg?download=true"
   },
   {
-    "question": "In the picture, the number of cars is the month and the speed limit is the day. At what point did the Shanghai Composite Index of Chinese stocks close on that day?",
-    "answer": "3279.03",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/447a8346-0386-4491-be2b-0d7c6c74c5e0.jpg"
+    "question": "Identify the brand of the vehicle with a license plate starting with T on the right side of the road in the picture. I bought a car of the same brand in the United States, and now I want to call the brand to have maintenance done on my car. What is the official contact number for this brand?",
+    "answer": "1 (800) 822-8987",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/447a8346-0386-4491-be2b-0d7c6c74c5e0.jpg?download=true"
   },
   {
-    "question": "The number of cars represents the month, and the number of people represents the date. What will be the closing point of the Shanghai Composite Index in China on the morning of 2025?",
-    "answer": "3332.27",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/4acff575-c941-4981-b235-f781d3e49a37.jpg"
+    "question": "There is an artist’s Instagram account left on the mural along the way. I’m the PR manager of a restaurant chain and am considering whether to hire this artist to help with our brand logo, so I want to look at the artist’s previous commercial work first. As of April 17, 2026, on the artist’s official references page, which restaurant chain has the artist previously collaborated with?\n",
+    "answer": "SushiCo",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00431.jpg?download=true"
   },
   {
-    "question": "Identify the number in the hotel address shown in the picture and denote it as x. Based on the region where the hotel is located, determine which province in that region ranks x-th in life expectancy in 2024.",
-    "answer": "Metropolitan City of Milan",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/22d041ae-8d47-409b-99a1-f49eedc6f6b0.jpg"
+    "question": "Given the local government’s regulations on lake transportation, if I want to visit the lake near the hotel and need information on ticket prices and schedules, what number should I call?",
+    "answer": "+39 030 9149511",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/22d041ae-8d47-409b-99a1-f49eedc6f6b0.jpg?download=true"
   },
   {
-    "question": "Please identify the largest single Arabic numeral appearing in the image, and state the date (yyyy/mm) of the most recent Science Advances magazine research article title featuring the celestial body ranked at that number in mass in the Solar System, as of 2025/8/8.",
-    "answer": "2023/3",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/e441398e-5493-4901-82b6-d77119b526e2.jpg"
+    "question": "There's a blue vending machine at the end of the street with a three-color logo. As a regular customer, what number should I call to contact their company's customer support representative?",
+    "answer": "1-800-963-2424",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/e441398e-5493-4901-82b6-d77119b526e2.jpg?download=true"
   },
   {
-    "question": "Find the sign with white text on a brown background in the image and identify the brand name. If you have questions or comments and want to contact the organization with the same name, what is its official contact email address?",
+    "question": "Find the sign with white text on a brown background in the image and identify the brand name. If I have questions or comments and want to contact the organization with the same name, what is its official contact email address?",
     "answer": "cassidi@stls.frb.org",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/79d011f3-488d-4ed3-a94e-d4ba48097508.jpg"
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/79d011f3-488d-4ed3-a94e-d4ba48097508.jpg?download=true"
   },
   {
-    "question": "Assume that the number of potted plants with flower pots visible in the picture is x. Then, among the countries shown in the picture, which city has the x-th urban population ranking in 2025?",
-    "answer": "Hiroshima",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/282d8b51-6ed4-4d7e-baae-16055ca7ea98.jpg"
+    "question": "The image shows a company's contact number. I'd like to verify the authenticity of this company. Could you provide their corporate registration number?",
+    "answer": "5010801031238",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00564.jpg?download=true"
   },
   {
-    "question": "What is the brand of the store that is the second one to the left of N109, and by how much did that brand’s biggest competitor’s (according to slideshare.net) revenue grow in fiscal 2024?",
-    "answer": "Michael Kors, 3%",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/1673c600-f8e1-40a5-a73d-6ca48e2d48bf.jpg"
+    "question": "I like the red bag on the right side of the picture, and I live near Changi Business Park in Singapore. If there are any stores of this brand nearby, could you tell me the address of the closest one?\n",
+    "answer": "5 Changi Business Park Central 1 #B1-22/23",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/1673c600-f8e1-40a5-a73d-6ca48e2d48bf.jpg?download=true"
   },
   {
-    "question": "Assume that the number of letters in the word beginning with \"v\" on the sign in the picture is \"x\". Then, which producer ranks x-th in wind electricity production in the Key World Energy Statistics 2021?",
-    "answer": "United Kingdom",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/24925371-67e8-4ebe-93e0-8b8f3570522d.jpg"
+    "question": "Regarding the brand starting with C and ending with N in the picture, could you tell me what is its market sales volume in China in 2024 in CNY？（Round to two decimal places）",
+    "answer": "1.04 billion",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/24925371-67e8-4ebe-93e0-8b8f3570522d.jpg?download=true"
   },
   {
-    "question": "Suppose the number of letters in the first row of black words below “LOVE” in the figure is x; which country was ranked x‑th in the 2025 World Happiness Report?",
-    "answer": "Israel",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/d393f244-0176-44a1-9ad1-9b58fa0880fc.jpg"
+    "question": "In a shopping mall image, there is a backdrop featuring a \"LOVE\" logo, which belongs to a sub-brand of an Italian luxury brand. I really like this brand, but the style I want isn’t available in that mall. I'm planning to order from the brand's official Italian website, and I'd like to ask whether they ship to China. Which phone number should I call to enquire?",
+    "answer": "+39 02 4792 4144",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/d393f244-0176-44a1-9ad1-9b58fa0880fc.jpg?download=true"
   },
   {
-    "question": "Let x be the number of letters in the first word to the right of “Using” in the image. According to the QS World University Rankings 2026, which university is ranked x‑th globally?",
-    "answer": "ETH Zurich",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/003bf48c-27ff-4fc3-9910-e838b8c57982.jpg"
+    "question": "As a clothing buyer, I’m interested in the fabric mentioned on the wall in the image. According to ICAC statistics, what was the global production volume of this material in the 2024/2025 season, round to 0.1 million metric tons?",
+    "answer": "25.7",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/003bf48c-27ff-4fc3-9910-e838b8c57982.jpg?download=true"
   },
   {
-    "question": "The white text on the yellow-green background is considered to be the fruit of a plant. What was the total value of China's imports of this species in US dollars in 2024?",
-    "answer": "2.386 billion",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/17edce4e-24d0-447e-bc8e-63e10b2222f0.jpg"
+    "question": "I noticed a food brand on the right side of the picture. If I want to get their lowest-calorie chips, which flavor(s) should I go for?",
+    "answer": "Fried Egg Flavoured or Chorizo Favoured",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/17edce4e-24d0-447e-bc8e-63e10b2222f0.jpg?download=true"
   },
   {
-    "question": "Locate the discount information displayed in red text on a white background. If the two digits that follow the slash are interpreted as x, what was the highest temperature (°C) in Huangpu District, Shanghai on August x, 2025",
-    "answer": "35°C",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/b39987d5-a431-43bf-8f88-ee706651e925.jpg"
+    "question": "Identify a brand's name starts with V in the picture, and I heard that this brand has been losing money for many years. May I ask what the brand's revenue (in GBP）was in 2024?",
+    "answer": "112.7 million",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/b39987d5-a431-43bf-8f88-ee706651e925.jpg?download=true"
   },
   {
-    "question": "Based on the red number on white background displayed next to the hanging red sign, which country occupied that position in the global gold reserves ranking in June 2025?",
-    "answer": "Euro Area",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/59f72a38-71cc-481d-81f6-9b829c6173ea.jpg"
+    "question": "Identify a kind of fruit in the lower right corner of the picture, which has yellow underneath and green leaves. I am planning to lease land in Guangdong to grow this fruit, but I need to understand the market situation first. What is the production of this fruit in Guangdong Province in 2024 from government document? (Do not keep decimals)",
+    "answer": "1376000 tons",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/59f72a38-71cc-481d-81f6-9b829c6173ea.jpg?download=true"
   },
   {
-    "question": "Assuming that the number to the left of \"75\" is x, what was the closing point of the Shanghai Composite Index on August x, 2025?",
-    "answer": "3559.95",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/e27dc07c-d0ac-4557-9e85-41d98f7fe028.jpg"
+    "question": "I'd like to eat at the restaurant in the picture that starts with \"M\". I heard their asparagus pasta is delicious. Could you tell me the price in EUR?（as for April 2026)?",
+    "answer": "22",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00512.jpg?download=true"
   },
   {
-    "question": "Assume that the number of logos with \"R\" in the red circle is X. As of January 1, 2024, which city (not prefecture) in Japan has the X-th largest population?",
-    "answer": "Yokohama",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/68ed0a0a-bb97-4096-8d31-8954392b57f3.jpg"
+    "question": "How much was the ticket for the music section in 2021 for the event shown on the poster labeled ‘2017’ in the image?",
+    "answer": "8,000 YEN",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/68ed0a0a-bb97-4096-8d31-8954392b57f3.jpg?download=true"
   },
   {
-    "question": "Let the number of people wearing glasses in the picture be X. What is the temperature difference in degrees Celsius in Xi'an on August X, 2025?",
-    "answer": "10 ℃",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/103ea4f7-6d60-4157-90d0-334c11eb58a0.jpg"
+    "question": "I am a market analyst. Regarding the beer brand in the picture, could you tell me what its total revenue (in CNY) was in 2025? (units: billion, retain one decimal place）",
+    "answer": "324.7",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/103ea4f7-6d60-4157-90d0-334c11eb58a0.jpg?download=true"
   },
   {
-    "question": "In the image, the orange number above the number \"10\" on the whiteboard is designated as X. In 2024, which country ranks X in GDP?",
-    "answer": "Saudi Arabia",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/5501f91e-2fa0-4b9a-b706-05a1b268aef2.jpg"
+    "question": "Identify the car brand with license plate number 3123 in the picture. I would like to buy a car from the same brand, so I want to know how popular it is. Could you tell me how many cars this brand sold globally in 2025?",
+    "answer": "2,160,000",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/5501f91e-2fa0-4b9a-b706-05a1b268aef2.jpg?download=true"
   },
   {
-    "question": "Assume that the two digits following \"Everything\" in the picture represent the number x. Which country was ranked x-th in terms of gold reserves in the second quarter of 2025?",
-    "answer": "Poland",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/10f92499-19eb-47c9-ba82-16f06b2c8032.jpg"
+    "question": "I noticed my favourite fruit at a stall on the far right of the image. I know the Philippines is a major exporter of the fruit. Based on World Integrated Trade Solution (WITS) data in 2024, what was the Philippines' export volume in tonnes?",
+    "answer": "682,067",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/10f92499-19eb-47c9-ba82-16f06b2c8032.jpg?download=true"
   },
   {
-    "question": "Suppose the number of smaller English letters (including the ampersand “&”) on the sign above the pedestrian holding a white umbrella is x. Which country ranks x-th in the World Happiness Report 2025?",
-    "answer": "Switzerland",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/df4b1b41-19fc-42de-9311-5419f1ee8036.jpg"
+    "question": "I am interested in a group company whose name starts with \"N\" in the picture. What is the address of their head office?",
+    "answer": "2-1-6, SHINSAIBASHISUJI, CHUO-KU OSAKA, OSAKA, 542-0085",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/df4b1b41-19fc-42de-9311-5419f1ee8036.jpg?download=true"
   },
   {
-    "question": "Identify the hotel located behind the sign that says \"MASS\" in white letters on a black background. The hotel’s name is written in white capital letters. Let the number of letters in the first word of the hotel’s name be x. Which country ranks x-th in the World Happiness Report 2025?",
-    "answer": "Norway",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/1b0be7a0-9a34-4266-ab07-e3fed0ea6944.jpg"
+    "question": "There is a bubble tea brand in the picture and I love to drink it. I am a student studying in UNSW. If there is a store of this tea near my college in Kensington district,  can you please tell me the address of it.",
+    "answer": "15 High Street, Kensington NSW 2033, Australia",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/1b0be7a0-9a34-4266-ab07-e3fed0ea6944.jpg?download=true"
   },
   {
-    "question": "Assume there are x payment QR codes in the image. What is the Global Peace Index (GPI) score of the country ranked x-th in the 2025 Global Peace Index? (Round to two decimal places)",
-    "answer": "1.10",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/4294d392-ffe0-4f0a-b0fa-8d8b8eb4a657.jpg"
+    "question": "For the brand on the jeans worn by the woman in white T-shirt in the picture, can you tell me what this brand's 2025 revenue was in billions of EUR? (Keep the whole number)",
+    "answer": "6",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/4294d392-ffe0-4f0a-b0fa-8d8b8eb4a657.jpg?download=true"
   },
   {
-    "question": "Assume that the number of people wearing black hats with a little orange on them is x. Which country ranks x-th in the 2025 Global Peace Index?",
-    "answer": "Iceland",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/ff71faff-7396-4a4a-b93b-7ebc83a44812.jpg"
+    "question": "There's a boy in the picture carrying a backpack, and I can see a sports brand logo on it. I would like to purchase a similar one from this brand, can you tell me he official website address?",
+    "answer": "https://quechuabrand.com/",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/ff71faff-7396-4a4a-b93b-7ebc83a44812.jpg?download=true"
   },
   {
-    "question": "Identify the item held by the person with blond hair, a blue coat, and a white inner shirt; identify the company ranked first in 2024 global market share for that item. Answer the total number of pages in that company's 2024 Annual Report on Form 10-K.",
-    "answer": "121",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/7edd2b74-1034-4d5e-949e-340f4de3fd53.jpg"
+    "question": "II am an electronics enthusiast and really like the brand of the electronic product held by the person with blond hair, a blue coat, and a white inner shirt. On what date was the product newly launched by the company in 2025 officially released in China?",
+    "answer": "9/19/2025",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/7edd2b74-1034-4d5e-949e-340f4de3fd53.jpg?download=true"
   },
   {
-    "question": "Identify the number of teeth visible in the mouth of the person with a painted face in the picture and denote this number as x. Which country ranked x-th in terms of total medals won at the 12th World Games in 2025?",
-    "answer": "United States of America",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/dab4d5b9-71b6-4994-be2e-8ca7e3c41269.jpg"
+    "question": "I want to go to the shop with the phone number in the picture. I heard that this restaurant is very good, so I made plans with my friend to go eat at this restaurant this weekend. Could you provide me with the specific address?",
+    "answer": "1 Chome-1-6 Namba, Chuo Ward, Osaka, 542-0076",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00501.jpg?download=true"
   },
   {
-    "question": "Identify the number of letters printed on the T-shirt worn by the man with a black and yellow hat and denote this number as x. Which country ranked x-th fastest in terms of real GDP growth rate in 2025, as projected by the International Monetary Fund in April 2025?",
-    "answer": "Uganda",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/8b105517-654d-4a3e-888d-5b4875ef5b7a.jpg"
+    "question": "For this backpack ona little boy in a vest squatting in front of a stall, picking out books, if I purchase a silimar one from its official retail stores or online store, what is the legal warranty period?",
+    "answer": "2 years",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/8b105517-654d-4a3e-888d-5b4875ef5b7a.jpg?download=true"
   },
   {
-    "question": "Count the number of two-way traffic signs visible in the image and denote this value as x. Answer how many times the works of the scholar ranked x in the editorial board of Cement and Concrete Research were cited in 2024.",
-    "answer": "2550",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/5f809bbb-1433-443b-97e7-c2db526f913c.jpg"
+    "question": "I need to drive across the bridge in the picture tomorrow. Could you tell me how much the toll for this bridge is? (In RMB)",
+    "answer": "25",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/5f809bbb-1433-443b-97e7-c2db526f913c.jpg?download=true"
   },
   {
-    "question": "Assume a girl in a red outfit shows x teeth. Based on the festival depicted, in which city—within the country that includes the area where this festival originated—is ranked as the x-th largest by population in 2025? (As of August 25, 2025)",
-    "answer": "Palermo",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/18e00b02-3a4f-4cb7-a043-a02df1f96120.jpg"
-  },
-  {
-    "question": "To the right of the white car, there is a row of signs with white text on a black background. Assume the first number on the fourth sign from the bottom is x. Which university is ranked x-th in the QS World University Rankings 2026: Top global universities in the country shown in the picture?",
-    "answer": "Tokyo Institute of Technology (Tokyo Tech)",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/ac5e5f6c-2d00-4b69-94f3-2463a4e0c8d5.jpg"
-  },
-  {
-    "question": "The number of people on the road in the picture represents the month, while the total number of people represents the date. What was the closing value of the Shanghai Composite Index in China on this day in 2025? If the market is closed that day, please answer the closing point of the next trading day.",
-    "answer": "3206.92",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/914e6e26-0d2f-4538-841f-036012f66f23.jpg"
-  },
-  {
-    "question": "Assume that the number of words on the last line of the white rectangular strip of cloth in the picture is x. According to the 2024 GDP rankings published by the World Bank, what is the difference (in trillions of U.S. dollars) between the GDP of the country depicted in the image and the GDP of the country ranked x-th? (Keep two decimal places)",
-    "answer": "$2.84 trillion",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/eb4f37b1-51b1-46cb-93a8-f6e5077478c2.jpg"
-  },
-  {
-    "question": "Suppose the number of people wearing red shirts and white hats in the image is X. In the country where this building is located, which state ranks X in the 2025 Peace Index?",
-    "answer": "Yucatán",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/6706df9d-bdd1-47df-9d59-0f5e52b5dc6d.jpg"
-  },
-  {
-    "question": "Assume that the number of red lifebuoys visible in the picture is x; answer which country ranks x-th in the World Happiness Report 2025?",
-    "answer": "Finland",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/924eae23-e1ba-4dce-b3df-fdd24c47ed57.jpg"
-  },
-  {
-    "question": "The total number of traffic lights on the road in the picture represents the month, and the total number of cars represents the date. What was the closing value of the Shanghai Composite Index in China on this day in 2025?",
-    "answer": "3223.64",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/1d073790-843d-4a25-9868-f429174e5446.jpg"
-  },
-  {
-    "question": "Assume that the number of people walking in the parking lot is x. Which country is the airline ranked xth among the world’s most valuable airlines in 2024 from?",
-    "answer": "America",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/fd4b6ff3-891a-44fb-b8df-2dd64633f954.jpg"
-  },
-  {
-    "question": "Assuming there are X people in the relief above the three large central windows of the main building in the picture, what was the global box office revenue in USD of the movie ranked X-th in 2024?",
-    "answer": "492,162,604",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/f9078798-9492-4ba0-bba3-983c4944c9be.jpg"
-  },
-  {
-    "question": "Assume that the number of flags hanging on the building in the picture is x; then, please answer which country ranks x-th in electricity consumption among the leading countries in the world in 2024? (in terawatt-hours)",
-    "answer": "Brazil",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/6447958b-f3f4-464b-9304-c29a6d5ddb90.jpg"
-  },
-  {
-    "question": "Identify the house number on the left side of the picture and record it as x. As of August 23, 2025, which city has the x-th largest population in the country where this building is located?",
-    "answer": "Liepaja",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/a70ac846-78a8-4ef9-97e0-881e96f2e29c.jpg"
-  },
-  {
-    "question": "Find out the house number on the building on the left and call it x. Then according to the 2024 ‘Best Place To Live’ ranking for that country, which city is listed at position x, according to The Brussels Morning Newspaper.",
-    "answer": "Pavilosta",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/a2aee8d0-e4de-4e53-8fb3-df731cdd5274.jpg"
-  },
-  {
-    "question": "Determine the number of dark yellow hexagrams in the image and record it as x. Answer the highest wind speed in mph in London on day x of January 2024. (Please use \"mph\" and express it to the nearest integer)",
-    "answer": "17 mph",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/e9fbe13c-cf04-4b35-9839-d221159d33ce.jpg"
-  },
-  {
-    "question": "If the number of letters to the left of \"LEASE\" is X. How many industries in the United States contributed to the growth of real GDP in quarter X in 2024?",
-    "answer": "Fourteen",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/0b24dabb-794c-415a-a6b5-6da2d4d081e0.jpg"
-  },
-  {
-    "question": "Assume the number of bright yellow boats in the image is x. For the country shown, which city will rank x-th by population in 2025? (As of Aug 25, 2025)",
-    "answer": "Ajman",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/0abc9c17-09dd-4e30-a9a0-769cc44a275e.jpg"
-  },
-  {
-    "question": "Suppose the number of English letters in the first row of the red lettering on the white background on the right side of the picture is x; which country ranks x-th in the 2025 World Happiness Report?",
-    "answer": "Australia",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/006177a6-25fe-47c5-8e1f-9cf918da6d87.jpg"
-  },
-  {
-    "question": "Suppose the shape of a horse appears x times on top of the building shown in the picture. By how much did Mercedes‑Benz’s pre‑tax profit increase in 202x compared with the previous year? Accurate to 1%.",
-    "answer": "28%",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/31819c54-5005-416d-95ed-ea19c1dc5fa8.jpg"
-  },
-  {
-    "question": "Based on the time shown in the picture, let x be the number of hour (e.g., for 17:30 and 5:30, x=5). What is the sales volume of Xiaomi cars in the xth month of 2025?",
-    "answer": "28585",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/3bb249ba-3804-4d4d-8f8c-e60204b4c09d.jpg"
-  },
-  {
-    "question": "Please determine how many lifebuoys there are on the two ships closest to the camera, recorded as x. Which country was ranked x‑th in the 2025 World Happiness Report?",
-    "answer": "Sweden",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/8aaaa3b6-9dfb-4958-9ffd-3dc88d7e2d39.jpg"
-  },
-  {
-    "question": "Identify the number of birds in the picture and record it as x. Who was the x-th riches person in the world in July 2025?",
-    "answer": "Larry Ellison",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/94b3d2f6-198d-45db-8ac0-a38d03332f88.jpg"
-  },
-  {
-    "question": "Count the number of statues in the picture that are holding cross scepter, and denote this number as x. What object is circled in orange on page x of the 2024 Annual Report published by the country shown in the picture?",
-    "answer": "crown",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/28085328-79f6-4a8a-ad80-f23cdb7dcce3.jpg"
-  },
-  {
-    "question": "Identify the number of bright red lights on the tallest building in the picture and denote this number by x. Which country's GDP ranked the x-th largest worldwide in 2024?",
-    "answer": "France",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/451a0079-0a90-4b0f-b502-1dd6dd8b9a27.jpg"
-  },
-  {
-    "question": "Identify the number of illuminated red characters in the picture and denote this number by x. What is the x-th best university in Eastern Europe in 2025, as ranked by QS?",
-    "answer": "University of Warsaw",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/4440f26c-ae35-4afe-bb32-7668a9c45678.jpg"
-  },
-  {
-    "question": "On the billboard with a downward arrow, suppose the largest two-digit number is x; then, which country was ranked x in the World Happiness Report 2025?",
-    "answer": "Colombia",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/c94ad8be-31a1-4d3f-a296-151f25ff36db.jpg"
-  },
-  {
-    "question": "Let X be the number of letters in the word to the right of \"TUNG.\" What was the closing price of the Shanghai Composite Index on X/X/2025?",
-    "answer": "3385.36",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/0953b340-a952-41d0-914b-fae5ca2212dc.jpg"
-  },
-  {
-    "question": "There's a line of white words on top of a black building. Let the number of letters in the first word be x (for the month), and the number of letters in the second word be y (for the day). What was the closing value of the Shanghai Composite Index on x/y in 2025?",
-    "answer": "3371.92",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/e2667224-fd13-45d6-8e1d-a3741cae35e5.jpg"
-  },
-  {
-    "question": "Let x be the number of letters in the word(s) in the image that start with “J”. According to the 2024 international tourist-arrival rankings, what is the difference (in millions) between the number of international tourists to the country shown and the country ranked x-th?",
-    "answer": "34.9",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/176b7f5d-2ca9-4746-b0a9-01d2a9005a31.jpg"
-  },
-  {
-    "question": "Identify and infer the number of red cars in the picture, and denote this number as x. What is the title of the x-th article in the Financial Times (UK edition, newspaper) issued on 26 August 2025?",
-    "answer": "In harm's way: Journalists die in Israeli strike",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/978f0190-77da-453f-89ee-ec11a71de3eb.jpg"
-  },
-  {
-    "question": "Determine how many keys are visible in the image and denote this number as x. Identify the animal in the image. Identify the country with the x-th largest population of that animal in 2022. Then, answer how many long-term priorities are included in that country’s 2030 Strategy for Development.",
+    "question": "Identify the restaurant with the yellow sign, black text, and a name starting with the letter G in the picture. I want to have an inexpensive lunch at this restaurant tomorrow. Could you tell me the price of the cheapest lunch set? (in Dhs)",
     "answer": "7",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/544a2157-6a7d-473a-ad3f-bae798eae545.jpg"
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00475.jpg?download=true"
   },
   {
-    "question": "Suppose the number of red flower pots in the picture is x. Which producer ranks x-th in natural gas production in Key World Energy Statistics 2021?",
-    "answer": "United States",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/075cc52d-080f-44be-9a6e-4e52bcd28314.jpg"
+    "question": "Does the salon in the picture offer a student discount? If so, please let me know the amount of the discount.",
+    "answer": "JPY 500",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/ac5e5f6c-2d00-4b69-94f3-2463a4e0c8d5.jpg?download=true"
   },
   {
-    "question": "Assume that the second number to the right of \"BD\" is x (0-9). Then, which province in China ranks x-th by permanent population in 2024?",
-    "answer": "Zhejiang Province",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/eec88974-4f1e-4d8a-9258-bbc2f448ba94.jpg"
+    "question": "If I want to take my team to the venue for the “FORUM” event shown in the diagram, what discounts can the school session guided tours enjoy?（Rounded to two decimal places as a percentage.）",
+    "answer": "35% off",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00552.jpg?download=true"
   },
   {
-    "question": "Assume the number next to \"f\" is x. Which province in China ranks x-th by permanent population in 2024?",
-    "answer": "Sichuan Province",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/d2f2b2f7-511c-4738-ac6b-ade7a239cfc8.jpg"
+    "question": "Identified the shop with the white sign whose phone number ends in 8550 in the picture. I would like to visit this shop. Could you please help me check what time it opens in the morning?",
+    "answer": "9:30 AM",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00521.jpg?download=true"
   },
   {
-    "question": "Suppose the number to the right of \"DEC\" on the street light sign is x. Then, what was the total population of the country where the street in the picture is located by the end of the year x?",
-    "answer": " 25,694,393 people",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/c282fcb1-dbc0-4a3f-b7f0-d5eb2bb71b6d.jpg"
+    "question": "I'd like to visit the location marked with white text on a gray background on the right side of the building in the photo on Tuesday. Could you tell me what time it opens on Sunday?",
+    "answer": "10:00",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/6706df9d-bdd1-47df-9d59-0f5e52b5dc6d.jpg?download=true"
   },
   {
-    "question": "The number to the left of the number \"5119\" represents the month, and the number to the right of the letters \"PASSAGE\" represents the date. What was the opening point of the Shanghai Composite Index on that day in 2025?",
-    "answer": "3340.71",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/ac227709-1569-4fc0-b649-be0eb70d7cc5.jpg"
+    "question": "There is a modern high-rise residential building near the cylindrical structure on the left in the image. If I’d like to buy a property there, which number should I call?",
+    "answer": "+356 20655 500",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/924eae23-e1ba-4dce-b3df-fdd24c47ed57.jpg?download=true"
   },
   {
-    "question": "Assume that the second number to the right of the number \"6\" is x (0-9). Then which province in China ranks x-th by permanent population in 2024?",
-    "answer": "Sichuan Province",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/d50a45e1-436b-437b-a1d3-d7ca4fdedcd2.jpg"
+    "question": "I placed an order at the online store whose name starts with “J” while I was on the go, but I did not receive any SMS notifications. Which phone number can I contact?",
+    "answer": "6308 3332",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00565.jpg?download=true"
   },
   {
-    "question": "Assuming that the first number from left to right is x and the second number is y, based on the fifth car on the left, what is the sales volume of the iPhone 15 series in x month of 202y, according to Canalys?",
-    "answer": "3.3 million",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/eb6aa0df-5138-4791-b629-c438157fb907.jpg"
+    "question": "I am interested in the ship moored at the pier whose name ends with \"STAD\". Could you tell me its length in meters?",
+    "answer": "75",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/fd4b6ff3-891a-44fb-b8df-2dd64633f954.jpg?download=true"
   },
   {
-    "question": "Assume that the number to the right of \"Y547\" is X (0-9). Then, which province in China ranks X in permanent population in 2024?",
-    "answer": "Henan Province",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/73e2a847-ac13-4a47-8cc2-3c571c307593.jpg"
+    "question": "When I left this hotel shown in the picture in Prague, I left my belongings there. I need to call the hotel to retrieve my items. Could you please tell me the hotel's contact number?\n",
+    "answer": "+420 601 576 992",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00451.jpg?download=true"
   },
   {
-    "question": "Observe the silver logo above the number \"86.\" Which part of the factory was being built by the company to which the logo belonged when it was raided by U.S. Department of Homeland Security agents in September 2025?",
-    "answer": "Battery portion.",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/142a9a05-3ffa-4234-a468-01ae0159cd03.jpg"
+    "question": "I am currently writing a research report on regional development in Canada. There are six small flags in the center of the building, and I would like to contact the premier of the province represented by the third flag from the right. What number should I call?",
+    "answer": "416-325-1941",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/6447958b-f3f4-464b-9304-c29a6d5ddb90.jpg?download=true"
   },
   {
-    "question": "On the box labeled “CHOCO,” look at the English word in the line directly below it. Take the first letter of this word and let its position in the 26-letter alphabet be x. Which competitor was ranked x-th in the World Rankings – Men’s Overall Ranking according to worldathletics.org (as of September 2, 2025)?",
-    "answer": "Niels LAROS",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/b0b24c3f-05f7-4383-8471-c06699c0d5f7.jpg"
+    "question": "I am very interested in the building with red brick walls and white decorative lines in the picture. Could you tell me what time does this building start to be open for visits every day?\n",
+    "answer": "10AM",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/a70ac846-78a8-4ef9-97e0-881e96f2e29c.jpg?download=true"
   },
   {
-    "question": "To the left of an orange object is a four-digit number with white text on a green background. Assume the second-to-last digit of this four-digit number is x. As of September 12, 2025, which country was ranked x-th in the world's population density (P/Km²) ranking from highest to lowest?",
-    "answer": "Maldives",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/59010f2d-a1fd-4251-8959-e0a8d5fb4478.jpg"
+    "question": "Could you please identify the city name that follows \"CELA\" in the image, and tell me who the current mayor is as of April 2026?",
+    "answer": "Riga, Viesturs Kleinbergs",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/a2aee8d0-e4de-4e53-8fb3-df731cdd5274.jpg?download=true"
   },
   {
-    "question": "Please observe the number to the right of the letter \"A\" at the lower right corner of the number \"181\". On September 5, 2025, how many goals had the player with this number scored for the Argentina national football team in the South American qualifiers for the 2026 World Cup?",
-    "answer": "Two.",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/dc880b9f-f143-40b1-8c78-b22038726f06.jpg"
+    "question": "I currently live in London, England. I plan to apply for a mortgage loan at the bank shown in the picture. What phone number can I call to contact them in advance?",
+    "answer": "0800 068 6064",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00401.jpg?download=true"
   },
   {
-    "question": "Find the book with an orange spine whose title starts with the word ‘ON’, count the number of letters in its title, and denote this number as x. What is the x-th best university worldwide in 2026 according to the QS ranking?",
-    "answer": "California Institute of Technology (Caltech)",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/73396384-532e-4482-9002-2a522808652b.jpg"
+    "question": "I am searching for a nice place for my parents to stay where they are taken cared of, like an elderly home. Identify the possibility for me in the photo and tell me, what number should I call to check about the availability?",
+    "answer": "800-338-8538",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/c85dc68e-619d-4be5-8691-dcbc191f622c.jpg?download=true"
   },
   {
-    "question": "Identify the first letter following the letters “Literatu”. Taking this letter’s position in the 26-letter alphabet, which film corresponds to that rank in the 2025 worldwide box office rankings, as of 16 September, 2025?",
-    "answer": "The Super Mario Bros. Movie",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/58b144e6-8d4d-4fd5-ae17-81c91582596c.jpg"
+    "question": "I'm planning a trip to Dubai next month. The hotel whose logo appears in the picture looks nice; could you please tell me their toll-free reservation number?",
+    "answer": "+971-4-80062774688",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/0abc9c17-09dd-4e30-a9a0-769cc44a275e.jpg?download=true"
   },
   {
-    "question": "After the letters “NATURA,” there is another letter. Taking this letter’s position in the 26-letter alphabet, which country corresponds to that position in the 2025 world population rankings？",
-    "answer": "Japan",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/f08e2407-f712-4de6-bfcd-a5dbecc41d75.jpg"
+    "question": "I am very interested in the painting of the winged man on the banner on the right side of the image, and I would like to visit this on this Tuesday. Could you please tell me the open time of the museum where this painting is located on Tuesday?",
+    "answer": "10:00",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/006177a6-25fe-47c5-8e1f-9cf918da6d87.jpg?download=true"
   },
   {
-    "question": "The book is located below a colorful book with a black background and a glowing line pattern. Identify the first letter in the last line of the cover title and determine its position in the 26-letter alphabet, denoted as x. Which country was ranked x-th by numbers of NBA Players – Historic Players (2024) list, according to worldpopulationreview?",
-    "answer": "Puerto Rico",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/74613904-c517-4f77-9a6d-062bbfa8cd53.jpg"
+    "question": "The picture shows a store with a white sign that starts with \"CANTON\".If there is any famous monthly event in this place from May 2025 that I can attend, could you tell me what it is ?.",
+    "answer": "BeChinatown Night Market",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00461.jpg?download=true"
   },
   {
-    "question": "To the right of \"3A\" is a price tag with a two-digit number on it. Let the first digit of this number be x. Which country/region ranked x-th in the 2024 NBA player count ranking (grouped by country/region)?",
-    "answer": "Australia",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/8315cf0a-4739-48cc-99d8-a765ad9ba9d7.jpg"
+    "question": "I'm a big fan of chocolate bakery at this convenience store in the picture.Could you tell me how many types of chocolate‑infused bakery bread are available at this convenience store shown in the picture in Malaysia?",
+    "answer": "2",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00491.jpg?download=true"
   },
   {
-    "question": "Identify the number that follows the capital letters 'RE' in the picture and denote this number as x. What is the first English word on the x-th page of the PDF file of Apple Inc.'s FY2024 Form 10-K?",
-    "answer": "Dividend",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/3e272dff-aa8a-49b6-8336-302ce31c4b03.jpg"
+    "question": "There is a financial institution close to the the word \"Broadway\" in the photo. I'm planning to buy a house in Los Angeles. Could you please tell me how many branches of this financial institution within Los Angeles offer home loan services?",
+    "answer": "6",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00408.jpg?download=true"
   },
   {
-    "question": "After “400,” there is another number. In world population rankings, which country corresponds to that number, as of 15th September 2025?",
-    "answer": "Bangladesh",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/0f3e62cb-d80d-4f5b-b515-3fc08685824f.jpg"
+    "question": "The name of the bar listed under “CLUB” is the same as a song by one of my favorite bands. This band often raises money for charities. Have they recently donated to any charities through an album? If so, please let me know the name of the charity.",
+    "answer": "War Child",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00456.jpg?download=true"
   },
   {
-    "question": "Identify the first digit immediately to the left of \".80\" in the image and denote it as x. In the 2025 ranking of countries by the population's yearly change, ordered from highest to lowest (positive to negative), which country was ranked x-th? (As of September 12, 2025)",
-    "answer": "Oman",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/62a6ffa3-7f28-4236-b860-b46d19c8c65d.jpg"
+    "question": "Looking at the white signboard in the picture, the phone number starts with 841. If I want to go there for lunch, what time does it open in the afternoon?",
+    "answer": "12 pm",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00573.jpg?download=true"
   },
   {
-    "question": "Identify the first digit immediately to the right of \"Z201\" in the image and denote it as x. In the 2025 ranking of countries by the population's yearly change, ordered from highest to lowest (positive to negative), which country was ranked x-th? (As of September 12, 2025)",
-    "answer": "Niger",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/518b5ad0-f198-4cc8-b1df-9809652546ab.jpg"
+    "question": "In the picture, on the right side of the street there is a row of black store signs. Please refer to the lowest one among them. That restaurant looks nice and I would like to dine there. Please help me find the phone number for this restaurant.",
+    "answer": "06-6777-2582",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00468.jpg?download=true"
   },
   {
-    "question": "On a red label with white text, there's a text consisting of a digit and a letter. Let x be the number before the letter \"F.\" As of September 12, 2025, which country/region ranks x-th in the world in terms of population density (P/Km²), from highest to lowest?",
-    "answer": "Singapore",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/d59edb51-11b4-4cf5-824f-92919a2ca039.jpg"
+    "question": "I’d like to see a show at the theater in the picture. Could you please provide the exact address?",
+    "answer": "729 7th Avenue, 6th Floor, New York, NY 10019",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00478.jpg?download=true"
   },
   {
-    "question": "Count the total number of people wearing dark blue top in the image and set this number as x. In the Sanlida World Ranking – Compound Men Individual, dated August 4, 2025, which athlete was ranked x-th?",
-    "answer": "Mike Schloesser",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/4f804a16-8d6b-4101-8d43-321b7f947db8.jpg"
+    "question": "I'd like to book a dinner at the restaurant with the name starting with the letter E in the picture. Could you tell me its reservation phone number?",
+    "answer": "03-6278-9880",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/c94ad8be-31a1-4d3f-a296-151f25ff36db.jpg?download=true"
   },
   {
-    "question": "Count the total number of people in the picture holding a child and let this number be x. Which team is ranked x-th in the AP Top 25 of the Men's College Basketball Rankings in the 2023–24 season?",
-    "answer": " UConn",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/026de9fa-2ead-4022-9606-1a028a35ad75.jpg"
+    "question": "I work for a real estate company and am conducting industry research. The company in the image that starts with \"O\" really attracts me. What is the group's latest total assets (in billions of USD) as shown on its official website? (to 1 d.p.)",
+    "answer": "8.4",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/0953b340-a952-41d0-914b-fae5ca2212dc.jpg?download=true"
   },
   {
-    "question": "Suppose the two-digit number in white on a blue background in the picture is x. What is the name of the movie that ranks x-th in the 2024 Worldwide Box Office?",
-    "answer": "Yolo",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/41a19ac6-ad8a-40ad-95a8-08e9769028a2.jpg"
+    "question": "I'd like to book the hotel with the white text in the picture. What number should I call to make a reservation?",
+    "answer": "877.551.7778",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/e2667224-fd13-45d6-8e1d-a3741cae35e5.jpg?download=true"
   },
   {
-    "question": "Count the total number of people wearing red hats in the picture and let this number be x. Which athlete was ranked x-th in the Men’s Artistic Gymnastics Challenge Cup Ranking 2023?",
-    "answer": "MESZAROS Krisztofer ",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/92661477-4fbf-4c3b-a172-4505a2232de9.jpg"
+    "question": "There is a Chinese restaurant in the picture that I really like. Could you tell me which meals it serves—breakfast, lunch, and/or dinner?",
+    "answer": "Lunch and dinner",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/176b7f5d-2ca9-4746-b0a9-01d2a9005a31.jpg?download=true"
   },
   {
-    "question": "After the text “52OO,” there is another letter. Taking this letter’s position in the 26-letter alphabet, which film corresponds to that position in the worldwide box office rankings by lifetime grosses, as of 15 September, 2025?",
-    "answer": "Furious 7",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/83715839-eaac-4caa-b563-360e374552e7.jpg"
+    "question": "My girlfriend and I are planning to go to the \"RESTAURANT“ in the picture—what’s the reservation phone number?",
+    "answer": "+33 (0)1 83 77 77 78",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/978f0190-77da-453f-89ee-ec11a71de3eb.jpg?download=true"
   },
   {
-    "question": "Which country in the Total GHG Emissions (2023) in the World Ranking corresponds to total number of letters in the second row of English words displayed on the middle part of a building?",
-    "answer": "Germany",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/05619974-29e4-4b4a-8ff2-e2c853f0891a.jpg"
+    "question": "I was chatting with a friend about movie poster designs, and when I came across this picture, I got curious about who the director is. I'd like to know which of this director's films is second on Rotten Tomatoes?",
+    "answer": "Songs My Brothers Taught Me",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00513.jpg?download=true"
   },
   {
-    "question": "Identify the first letter of the word that comes before 'Br' on the green road sign in the picture, and denote its position in the 26-letter English alphabet as x. Based on this value of x, what is the x-th ranked movie in the 2025 Worldwide Box Office as of September 15, 2025?",
-    "answer": "Lilo & Stitch",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/36fa0fff-4b33-4e5b-82be-8f62cfd9691b.jpg"
+    "question": "I'm planning my trip and thinking about booking this hotel, but I’ve heard that the brand has recently been upgraded and now uses a new name. What is the hotel’s new name?",
+    "answer": "KOKO HOTELS",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/5e9c8db8-5155-477d-87d1-49a8e2572c31.jpg?download=true"
   },
   {
-    "question": "Identify the digit (0–9) in the image that is farthest from the letter \"H\" and denote it as x. In the QS World University Rankings 2026, ordered by overall score from highest to lowest, what is the overall score of the university ranked x-th?",
-    "answer": "95.9",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/e29c657a-44cc-41b3-adbc-f25d47db2e7a.jpg"
+    "question": "Identify a line of white text in the middle of the central building in the picture; this is the name of a company. My company is located in Finland and is preparing to start business cooperation with this company. I want to first contact this company by email to schedule a meeting. What is this company's contact email in Finland?",
+    "answer": "johan@rydqvist.com",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/eec88974-4f1e-4d8a-9258-bbc2f448ba94.jpg?download=true"
   },
   {
-    "question": "Identify the last two digits of a year shown in the image and denote them as x. In the QS World University Rankings 2026, ordered by overall score from highest to lowest, what is the overall score of the university ranked x-th?",
-    "answer": "93.7",
-    "image": "https://huggingface.co/datasets/pix2fact/Pix2FactBenchmark/resolve/main/c7cfaa1a-3ecf-4fb1-9564-4b92f5f12328.jpg"
+    "question": "I'd like to contact the spokesperson for the bank shown in the photo. Which email address should I send the interview outline to?",
+    "answer": "pressoffice.paris@bnpparibas.com",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/d2f2b2f7-511c-4738-ac6b-ade7a239cfc8.jpg?download=true"
+  },
+  {
+    "question": "A friend recommended that I buy cosmetics at the department store in the picture, saying the quality is pretty good. What is the capacity (in milliliters) of the most expensive eye cream sold on the Australian website of this department store?",
+    "answer": "15",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/c282fcb1-dbc0-4a3f-b7f0-d5eb2bb71b6d.jpg?download=true"
+  },
+  {
+    "question": "The woman in the white top wearing a hat is holding a piece of clothing from a certain brand. I’d like to buy clothes from that brand on this street. Could you tell me where the nearest store is?",
+    "answer": "261-271 Regent Street, W1B 2ES",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/ac227709-1569-4fc0-b649-be0eb70d7cc5.jpg?download=true"
+  },
+  {
+    "question": "There is an issue with my bank account starting with the letter C in the picture. I need to go to a nearby branch to resolve this problem. I am currently at Japanese Village Plaza, Los Angelas. Could you please tell me the detailed address if there is a branch of this bank nearby?",
+    "answer": "211 S Central Ave, Los Angeles, CA 90012, United States",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/d50a45e1-436b-437b-a1d3-d7ca4fdedcd2.jpg?download=true"
+  },
+  {
+    "question": "I’m planning to visit the building with the large circular clock on its tower. And I want to know how many venues of the same kind as the one indicated by the lower text beneath the circular logo are listed on its official website?",
+    "answer": "8",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/eb6aa0df-5138-4791-b629-c438157fb907.jpg?download=true"
+  },
+  {
+    "question": "Identify the word starting with 'R' on the sticker on the white door on the left in the picture; this is the name of a company. I purchased products from this company, but recently they broke, and I want to contact the company by phone for repairs. What is the company's repair contact number in the United States?",
+    "answer": "+1 (562) 564 6628",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/ca6b651b-967c-4e01-998c-94abb6677a87.jpg?download=true"
+  },
+  {
+    "question": "For the car brand in the picture, when were locally assembled versions first available in Malaysia?",
+    "answer": "10/15/2025",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/142a9a05-3ffa-4234-a468-01ae0159cd03.jpg?download=true"
+  },
+  {
+    "question": "Identify the pink packaged product on the right side of the picture, starting with letters L. I am currently trying to control my weight. What is the fat content of this product?",
+    "answer": "25.4 g/100g",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/b0b24c3f-05f7-4383-8471-c06699c0d5f7.jpg?download=true"
+  },
+  {
+    "question": "Identify the blue-background, white-lettered sign above the snack stall in the picture, which shows the name of a company. I am a journalist and want to interview the company about its recent developments, so I need to first contact them by email to schedule an interview. What is the company's contact email?",
+    "answer": "international@kfcc.co.kr",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/59010f2d-a1fd-4251-8959-e0a8d5fb4478.jpg?download=true"
+  },
+  {
+    "question": "I am responsible for brand promotion of skincare products. I am currently conducting research on the promotion of this high-end Japanese skincare brand in the US as shown in the picture. Could you tell me how many blog posts the brand of US official website published in March 2026?",
+    "answer": "Four",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/a3e531c2-9a90-4363-aa3b-e01f6b57104d.jpg?download=true"
+  },
+  {
+    "question": "There is a book in the picture with the word “puzzle” printed on the spine (the spine is white, and the text is red). I really like this author—what is his latest published books as of Apirl 2026?",
+    "answer": "The Puzzleman - the riddle man",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/73396384-532e-4482-9002-2a522808652b.jpg?download=true"
+  },
+  {
+    "question": "Identify the name of the organization located behind the woman in the center of the picture, next to her shoulder. I am a journalist and would like to interview this organization about their recent research developments. I hope to first contact them via email to discuss the interview schedule. What is the contact email of this organization?",
+    "answer": "gibrd@qq.com",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/c621662e-8957-4949-a547-6e58d53c6dbe.jpg?download=true"
+  },
+  {
+    "question": "Identify the name of a book on the bookshelf that starts with A and ends with G. I have a book ready for publication and want to contact the publisher of this book. What is the phone number of this publisher in the UK?",
+    "answer": "+44 20 3122 6000",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/f08e2407-f712-4de6-bfcd-a5dbecc41d75.jpg?download=true"
+  },
+  {
+    "question": "To the left of the blue book starting with 'S' on the shelf, there are two books with white spines and red and black text. I'm a big fan of the author of those two books. Could you tell me what his newest solo book is?",
+    "answer": "Jag gör med dig vad jag vill : perspektiv på våld och våldsskildringar",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/74613904-c517-4f77-9a6d-062bbfa8cd53.jpg?download=true"
+  },
+  {
+    "question": "I bought a pair of brand-name shoes with the pink laces shown in the picture. If I’m not a member, how many days do I have to request a return and refund?",
+    "answer": "45",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/8315cf0a-4739-48cc-99d8-a765ad9ba9d7.jpg?download=true"
+  },
+  {
+    "question": "I’ve just arrived at the location shown on the map, and I’d like to book the hotel shown in the picture. How many guests can the largest room type at this hotel accommodate?",
+    "answer": "3",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/3e272dff-aa8a-49b6-8336-302ce31c4b03.jpg?download=true"
+  },
+  {
+    "question": "My friend booked a hotel for me — the one in the photo with the name 'DALIAN' in it — but forgot to tell me the address. Could you give me the full address?",
+    "answer": "No. 8, Shengli Plaza, Zhongshan District, Dalian, Liaoning, 116001, China",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/0392f93a-78a1-4fa0-b3a9-3aef267aa6d8.jpg?download=true"
+  },
+  {
+    "question": "I am a journalist and would like to request an interview with the kiwi fruit brand shown in the photo. Which email address should I send my message to?",
+    "answer": "contactzespri@zespri.com",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/62a6ffa3-7f28-4236-b860-b46d19c8c65d.jpg?download=true"
+  },
+  {
+    "question": "What is the shelf life of the product priced at 24.8 on the large label in the picture?",
+    "answer": "12 months",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/518b5ad0-f198-4cc8-b1df-9809652546ab.jpg?download=true"
+  },
+  {
+    "question": "I plan to travel to the place shown in the picture and have booked the hotel advertised on the billboard in the image. Could you tell me which subway station is the closest to this hotel so that I can get there conveniently?",
+    "answer": "Nippombashi",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/d59edb51-11b4-4cf5-824f-92919a2ca039.jpg?download=true"
+  },
+  {
+    "question": "I noticed a type of fruit next to the boxes that started with the capital letter \"M\". I found this fruit to be quite common here, and I'd like to learn more about it. According to World Population Review's 2026 production data, which country is the largest producer of this fruit?",
+    "answer": "India",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/00f78e08-2784-44cc-b3c6-9eeba5ebc105.jpg?download=true"
+  },
+  {
+    "question": "I am organizing an event and as the organizer need to purchase some water. Please tell me how many flavors of bottled sparkling water are there for the water brand pictured?",
+    "answer": "3",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/40b7c32a-d169-4bfe-a076-126cb7442adf.jpg?download=true"
+  },
+  {
+    "question": "The jacket the man is wearing in the image looks nice. I live in Edinburgh's Old Town—are there any retail stores of this brand nearby? If so, please provide the exact address.",
+    "answer": "7-13 Old Town EH45 8HY Peebles",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/f7091347-f2e7-4a9a-996e-7a0a2fdfa5be.jpg?download=true"
+  },
+  {
+    "question": "I saw a bird here that I have not seen in a long time. Identify the bird on the left side of the photo. How is the rating of this bird according to IUCN Red List of Threatened Species by 2025?",
+    "answer": "Least Concern",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/92661477-4fbf-4c3b-a172-4505a2232de9.jpg?download=true"
+  },
+  {
+    "question": "The international organization shown in the picture has published many research reports. In the report it released on April 16, 2026, how many countries did it study?",
+    "answer": "29",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/8f2238c3-549f-40a4-8314-d561080da356.jpg?download=true"
+  },
+  {
+    "question": "Identify a country's flag on top of a building in the middle of the picture. I am a journalist for a financial newspaper, and our newspaper plans to publish a report on the country's economic development soon. I need to contact the country's economic analysis bureau by phone to schedule an interview. What is the contact number of the country's economic analysis bureau?",
+    "answer": "(301) 278-9003",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/05619974-29e4-4b4a-8ff2-e2c853f0891a.jpg?download=true"
+  },
+  {
+    "question": "I need to ride my own bicycle across the bridge shown on the sign during tomorrow’s weekday peak hours. According to official statistics, how many more bike lanes does this bridge have in 2026 compared to 10 years ago?",
+    "answer": "a two-way protected bike lane",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/36fa0fff-4b33-4e5b-82be-8f62cfd9691b.jpg?download=true"
+  },
+  {
+    "question": "Which email address should I use to send feedback to the brand shown in white lettering on a black background on the gray box in the image?",
+    "answer": "CUSTOMER_SERVICE@GHY.COM.CN",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/e29c657a-44cc-41b3-adbc-f25d47db2e7a.jpg?download=true"
+  },
+  {
+    "question": "I'd like to buy the same laptop from the laptop series as the one in the picture in US. What's the cheapest model of this series listed on the  US official website?",
+    "answer": "ThinkPad T14 Gen 5 Intel (14\")",
+    "image": "https://huggingface.co/datasets/anon-submission-11235/Pix2fact/resolve/main/images/c7cfaa1a-3ecf-4fb1-9564-4b92f5f12328.jpg?download=true"
   }
 ]
