@@ -1,76 +1,152 @@
 /* eslint-disable no-use-before-define */
 // This file uses static leaderboard data; update as needed.
 
-const UPDATE_DATE = "2026-01-22";
+const METRIC_KEYS = ["c1", "c2", "c3", "c4", "avg"];
 
-const ORG_META = {
-  "Google DeepMind": { short: "G", bg: "#1a73e8", fg: "#ffffff" },
-  OpenAI: { short: "O", bg: "#0f172a", fg: "#ffffff", logo: "gpt.png" },
-  Alibaba: { short: "A", bg: "#f97316", fg: "#ffffff", logo: "qwen.png" },
-  xAI: { short: "x", bg: "#111827", fg: "#ffffff", logo: "grok.png" },
-  Anthropic: { short: "An", bg: "#7c3aed", fg: "#ffffff", logo: "claude.png" },
-  ByteDance: { short: "BD", bg: "#ef4444", fg: "#ffffff", logo: "doubao.png" },
-  Google: { short: "G", bg: "#1a73e8", fg: "#ffffff", logo: "gemini.jpg" },
-};
-
-const RAW_RESULTS = [
-  { model: "gemini-2.5-pro", org: "Google", score: 8.1, opensource: false },
+const LEADERBOARD_GROUPS = [
   {
-    model: "gemini-2.5-pro 2.5",
-    org: "Google",
-    score: 16,
-    opensource: false,
-    withSearch: true,
+    id: "open",
+    label: "Open-weights models",
+    className: "group-open",
+    rows: [
+      {
+        model: "Qwen3.6-27B",
+        logo: "qwen.png",
+        opensource: true,
+        c1: 4.7,
+        c2: 16.8,
+        c3: 4.9,
+        c4: 26.2,
+        avg: 13.2,
+        heat: { c1: 0, c2: 2, c3: 0, c4: 4, avg: 2 },
+      },
+      {
+        model: "GLM-4.6V",
+        logo: "zhipu.png",
+        opensource: true,
+        c1: 2.9,
+        c2: 11.4,
+        c3: 6.6,
+        c4: 23.9,
+        avg: 11.2,
+        heat: { c1: 0, c2: 1, c3: 1, c4: 3, avg: 1 },
+      },
+      {
+        model: "Gemma4-31B",
+        logo: "gemma-color.png",
+        opensource: true,
+        c1: 2.8,
+        c2: 8.2,
+        c3: 6.2,
+        c4: 19.6,
+        avg: 9.2,
+        heat: { c1: 0, c2: 1, c3: 1, c4: 3, avg: 1 },
+      },
+    ],
   },
-  { model: "gemini-3-pro", org: "Google", score: 12.5, opensource: false , withSearch: false},
   {
-    model: "gemini-3-pro",
-    org: "Google",
-    score: 27.0,
-    opensource: false,
-    withSearch: true,
+    id: "closed",
+    label: "Closed-weights models",
+    className: "group-closed",
+    rows: [
+      {
+        model: "gemini-3.1-pro",
+        logo: "gemini.jpg",
+        opensource: false,
+        c1: 18.4,
+        c2: 42.4,
+        c3: 21.0,
+        c4: 51.7,
+        avg: 33.4,
+        heat: { c1: 3, c2: 6, c3: 3, c4: 7, avg: 5 },
+      },
+      {
+        model: "gemini-2.5-pro",
+        logo: "gemini.jpg",
+        opensource: false,
+        c1: 14.6,
+        c2: 29.1,
+        c3: 18.6,
+        c4: 39.0,
+        avg: 25.3,
+        heat: { c1: 2, c2: 4, c3: 3, c4: 6, avg: 4 },
+      },
+      {
+        model: "GPT-5.4",
+        logo: "gpt.png",
+        opensource: false,
+        c1: 8.5,
+        c2: 17.9,
+        c3: 14.5,
+        c4: 32.9,
+        avg: 18.5,
+        heat: { c1: 1, c2: 2, c3: 2, c4: 5, avg: 3 },
+      },
+      {
+        model: "Grok-4.20",
+        logo: "grok.png",
+        opensource: false,
+        c1: 4.4,
+        c2: 22.3,
+        c3: 7.3,
+        c4: 38.8,
+        avg: 18.2,
+        heat: { c1: 0, c2: 3, c3: 1, c4: 6, avg: 2 },
+      },
+      {
+        model: "Claude-Opus-4.7",
+        logo: "claude.png",
+        opensource: false,
+        note: "*",
+        c1: 13.3,
+        c2: null,
+        c3: 16.3,
+        c4: null,
+        avg: 14.8,
+        heat: { c1: 2, c2: 0, c3: 2, c4: 0, avg: 2 },
+      },
+      {
+        model: "Doubao-2.0",
+        logo: "doubao.png",
+        opensource: false,
+        c1: 8.0,
+        c2: 8.6,
+        c3: 12.5,
+        c4: 15.1,
+        avg: 11.1,
+        heat: { c1: 1, c2: 1, c3: 2, c4: 2, avg: 1 },
+      },
+      {
+        model: "Doubao-1.8",
+        logo: "doubao.png",
+        opensource: false,
+        c1: 7.2,
+        c2: 10.6,
+        c3: 8.4,
+        c4: 17.2,
+        avg: 10.9,
+        heat: { c1: 1, c2: 1, c3: 1, c4: 2, avg: 1 },
+      },
+    ],
   },
-  { model: "gpt-5", org: "OpenAI", score: 5.6, opensource: false },
-  { model: "gpt-5 with search", org: "OpenAI", score: 11.5, opensource: false },
-  { model: "gpt-4o-2024-08-06", org: "OpenAI", score: 2.8, opensource: false },
-  { model: "Qwen3-VL-32B-Instruct", org: "Alibaba", score: 0.3, opensource: true },
-  { model: "grok-4-1-fast-non-reasoning", org: "xAI", score: 1.9, opensource: false },
-  {
-    model: "grok-4-1-fast-non-reasoning",
-    org: "xAI",
-    score: 1.9,
-    opensource: false,
-    withSearch: true,
-  },
-  { model: "claude-4.5-opus", org: "Anthropic", score: 4.0, opensource: false },
-  { model: "doubao-seed-1-6-vision-250815", org: "ByteDance", score: 2.4, opensource: false , withSearch: false},
-  { model: "doubao-seed-1-8-251228", org: "ByteDance", score: 2.5, opensource: false , withSearch: false},
-  { model: "doubao-seed-1-8-251228", org: "ByteDance", score: 13, opensource: false , withSearch: true},
 ];
 
-const LEADERBOARD_RESULTS = RAW_RESULTS.map((row) => ({
-  ...row,
-  track: "Overall",
-  setting: row.withSearch ? "Search API enabled" : "No search API",
-  date: UPDATE_DATE,
-}));
+const LEADERBOARD_ROWS = LEADERBOARD_GROUPS.flatMap((group) =>
+  group.rows.map((row) => ({ ...row, group: group.id, groupLabel: group.label })),
+);
+
+const BEST_BY_METRIC = METRIC_KEYS.reduce((acc, key) => {
+  const values = LEADERBOARD_ROWS.map((row) => row[key]).filter((value) => value != null);
+  acc[key] = Math.max(...values);
+  return acc;
+}, {});
 
 const state = {
   q: "",
-  track: "all",
-  setting: "all",
   opensourceOnly: false,
-  sortKey: "score",
-  sortDir: "desc", // "asc" | "desc"
+  sortKey: "avg",
+  sortDir: "desc",
 };
-
-function uniq(values) {
-  return Array.from(new Set(values)).sort((a, b) => a.localeCompare(b));
-}
-
-function byKey(key) {
-  return (row) => row[key];
-}
 
 function normalize(s) {
   return String(s ?? "").toLowerCase().trim();
@@ -78,48 +154,32 @@ function normalize(s) {
 
 function matchesQuery(row, q) {
   if (!q) return true;
-  const haystack = normalize(
-    `${row.model} ${row.org} ${row.track} ${row.setting}`,
-  );
-  return haystack.includes(normalize(q));
-}
-
-function matchesFilter(value, selected) {
-  return selected === "all" ? true : value === selected;
+  return normalize(row.model).includes(normalize(q));
 }
 
 function sortRows(rows, key, dir) {
   const mul = dir === "asc" ? 1 : -1;
-  const copy = [...rows];
-  copy.sort((a, b) => {
+  return [...rows].sort((a, b) => {
     const va = a[key];
     const vb = b[key];
-    if (key === "score") return mul * (Number(va) - Number(vb));
-    if (key === "date") return mul * (String(va).localeCompare(String(vb)));
-    return mul * String(va).localeCompare(String(vb));
+    if (key === "model") return mul * String(va).localeCompare(String(vb));
+    if (va == null && vb == null) return 0;
+    if (va == null) return 1;
+    if (vb == null) return -1;
+    return mul * (Number(va) - Number(vb));
   });
-  return copy;
 }
 
-function computeView(rows) {
-  let out = rows.filter((r) => matchesQuery(r, state.q));
-  out = out.filter((r) => matchesFilter(r.track, state.track));
-  out = out.filter((r) => matchesFilter(r.setting, state.setting));
-  if (state.opensourceOnly) out = out.filter((r) => r.opensource);
-  out = sortRows(out, state.sortKey, state.sortDir);
-  return out;
-}
+function computeView() {
+  const groups = LEADERBOARD_GROUPS.filter((group) => {
+    if (!state.opensourceOnly) return true;
+    return group.id === "open";
+  });
 
-function fillSelect(selectEl, values) {
-  const existing = Array.from(selectEl.querySelectorAll("option")).map(
-    (o) => o.value,
-  );
-  values.forEach((v) => {
-    if (existing.includes(v)) return;
-    const opt = document.createElement("option");
-    opt.value = v;
-    opt.textContent = v;
-    selectEl.appendChild(opt);
+  return groups.flatMap((group) => {
+    let rows = group.rows.filter((row) => matchesQuery(row, state.q));
+    rows = sortRows(rows, state.sortKey, state.sortDir);
+    return rows.length ? [{ type: "group", ...group }, ...rows.map((row) => ({ type: "row", ...row }))] : [];
   });
 }
 
@@ -140,110 +200,94 @@ function setSortedHeader(tableEl, sortKey, sortDir) {
   });
 }
 
-const RANK_MEDALS = ["🥇", "🥈", "🥉"];
-
-function renderTableBody(tbodyEl, rows) {
+function renderTableBody(tbodyEl, entries) {
   tbodyEl.innerHTML = "";
-  rows.forEach((r, idx) => {
+
+  entries.forEach((entry) => {
+    if (entry.type === "group") {
+      const tr = document.createElement("tr");
+      tr.className = `group-row ${entry.className}`;
+      const td = document.createElement("td");
+      td.colSpan = 6;
+      td.textContent = entry.label;
+      tr.appendChild(td);
+      tbodyEl.appendChild(tr);
+      return;
+    }
+
     const tr = document.createElement("tr");
-    const rank = idx + 1;
-    const rankDisplay = rank <= 3 ? RANK_MEDALS[rank - 1] : String(rank);
-
-    tr.appendChild(td(rankDisplay));
-    tr.appendChild(tdStrong(r.model));
-    tr.appendChild(tdOrg(r.org));
-    // tr.appendChild(tdBadge(r.track));
-    tr.appendChild(td(r.setting));
-    tr.appendChild(tdScore(r.score));
-    tr.appendChild(td(r.date));
-
+    tr.appendChild(tdModel(entry));
+    METRIC_KEYS.forEach((key) => {
+      tr.appendChild(tdMetric(entry, key));
+    });
     tbodyEl.appendChild(tr);
   });
 }
 
-function td(text) {
+function tdModel(row) {
   const el = document.createElement("td");
-  el.textContent = text;
-  return el;
-}
-
-function tdStrong(text) {
-  const el = document.createElement("td");
-  const strong = document.createElement("strong");
-  strong.textContent = text;
-  el.appendChild(strong);
-  return el;
-}
-
-function tdScore(score) {
-  const el = document.createElement("td");
-  el.className = "col-score";
-  el.textContent = `${Number(score).toFixed(1)}%`;
-  return el;
-}
-
-function tdBadge(text) {
-  const el = document.createElement("td");
-  const badge = document.createElement("span");
-  badge.className = "badge";
-  badge.textContent = text;
-  el.appendChild(badge);
-  return el;
-}
-
-function tdOrg(org) {
-  const el = document.createElement("td");
+  el.className = "col-model";
   const wrap = document.createElement("div");
-  wrap.className = "org-cell";
+  wrap.className = "model-cell";
 
-  const meta = ORG_META[org] || {};
-
-  // Add logo image if available
-  if (meta.logo) {
-    const logoImg = document.createElement("img");
-    logoImg.className = "org-logo";
-    logoImg.src = `./assets/${meta.logo}`;
-    logoImg.alt = `${org} logo`;
-    logoImg.setAttribute("aria-hidden", "true");
-    wrap.appendChild(logoImg);
-  } else {
-    // Fallback to text logo
-    const logo = document.createElement("span");
-    logo.className = "org-logo";
-    logo.textContent = meta.short || org.slice(0, 2);
-    if (meta.bg) logo.style.setProperty("--logo-bg", meta.bg);
-    if (meta.fg) logo.style.setProperty("--logo-fg", meta.fg);
-    logo.setAttribute("aria-hidden", "true");
-    wrap.appendChild(logo);
-  }
+  const logo = document.createElement("img");
+  logo.className = "model-logo";
+  logo.src = `./assets/${row.logo}`;
+  logo.alt = "";
+  logo.setAttribute("aria-hidden", "true");
+  wrap.appendChild(logo);
 
   const name = document.createElement("span");
-  name.className = "org-name";
-  name.textContent = org;
-
+  name.className = "model-name";
+  name.textContent = row.model;
   wrap.appendChild(name);
+
+  if (row.note) {
+    const note = document.createElement("sup");
+    note.className = "model-note";
+    note.textContent = row.note;
+    name.appendChild(note);
+  }
+
   el.appendChild(wrap);
   return el;
 }
 
+function tdMetric(row, key) {
+  const el = document.createElement("td");
+  el.className = "col-metric";
+  const value = row[key];
+  const heat = row.heat?.[key] ?? 0;
+  el.classList.add(`heat-${heat}`);
+
+  if (value == null) {
+    el.classList.add("metric-na");
+    el.textContent = "N/A";
+    return el;
+  }
+
+  el.textContent = `${Number(value).toFixed(1)}`;
+  if (Number(value) === BEST_BY_METRIC[key]) {
+    el.classList.add("metric-best");
+  }
+  return el;
+}
+
 function sync() {
-  const rows = computeView(LEADERBOARD_RESULTS);
-  renderTableBody(dom.tbody, rows);
-  dom.resultCount.textContent = `${rows.length} result${rows.length === 1 ? "" : "s"}`;
+  const entries = computeView();
+  const modelCount = entries.filter((entry) => entry.type === "row").length;
+  renderTableBody(dom.tbody, entries);
+  dom.resultCount.textContent = `${modelCount} model${modelCount === 1 ? "" : "s"}`;
   setSortedHeader(dom.table, state.sortKey, state.sortDir);
 }
 
 function reset() {
   state.q = "";
-  state.track = "all";
-  state.setting = "all";
   state.opensourceOnly = false;
-  state.sortKey = "score";
+  state.sortKey = "avg";
   state.sortDir = "desc";
 
   dom.q.value = "";
-  dom.track.value = "all";
-  dom.setting.value = "all";
   dom.opensource.checked = false;
   sync();
 }
@@ -252,30 +296,14 @@ const dom = {};
 
 function init() {
   dom.q = document.getElementById("q");
-  dom.track = document.getElementById("track");
-  dom.setting = document.getElementById("setting");
   dom.opensource = document.getElementById("opensource");
   dom.table = document.getElementById("leaderboardTable");
   dom.tbody = document.getElementById("leaderboardBody");
   dom.resultCount = document.getElementById("resultCount");
   dom.resetBtn = document.getElementById("resetBtn");
 
-  const tracks = uniq(LEADERBOARD_RESULTS.map(byKey("track")));
-  const settings = uniq(LEADERBOARD_RESULTS.map(byKey("setting")));
-
-  fillSelect(dom.track, tracks);
-  fillSelect(dom.setting, settings);
-
   dom.q.addEventListener("input", () => {
     state.q = dom.q.value;
-    sync();
-  });
-  dom.track.addEventListener("change", () => {
-    state.track = dom.track.value;
-    sync();
-  });
-  dom.setting.addEventListener("change", () => {
-    state.setting = dom.setting.value;
     sync();
   });
   dom.opensource.addEventListener("change", () => {
@@ -286,13 +314,13 @@ function init() {
 
   dom.table.querySelectorAll("thead th[data-key]").forEach((th) => {
     const key = th.getAttribute("data-key");
-    if (!key || key === "rank") return;
+    if (!key) return;
     th.addEventListener("click", () => {
       if (state.sortKey === key) {
         state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
       } else {
         state.sortKey = key;
-        state.sortDir = key === "score" ? "desc" : "asc";
+        state.sortDir = key === "model" ? "asc" : "desc";
       }
       sync();
     });

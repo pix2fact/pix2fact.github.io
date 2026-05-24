@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pix2Fact: When Vision Is Not Enough — Benchmarking Fine-Grained VQA with Web Verification on High-Resolution Real-World Scenes</title>
+    <title>Pix2Fact: When Vision Is Not Enough Benchmarking — Fine-Grained VQA with Web Verification on High-Resolution Real-World Scenes</title>
     <meta
       name="description"
       content="A research benchmark website template with a filterable leaderboard."
@@ -24,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=3" />
+    <link rel="stylesheet" href="./styles.css?v=6" />
   </head>
   <body>
     <header class="site-header">
@@ -38,7 +38,7 @@
               width="80"
               height="80"
             />
-            <h1 class="hero-title">Pix2Fact: When Vision Is Not Enough —<br />Benchmarking Fine-Grained VQA with Web<br />Verification on High-Resolution Real-World Scenes</h1>
+            <h1 class="hero-title">Pix2Fact: When Vision Is Not Enough Benchmarking — Fine-Grained VQA with Web Verification on High-Resolution Real-World Scenes</h1>
           </div>
 
           <div class="authors" aria-label="Authors">
@@ -139,29 +139,15 @@
               id="q"
               class="control-input"
               type="search"
-              placeholder="Search model / organization…"
+              placeholder="Search model…"
               autocomplete="off"
             />
-          </div>
-
-          <div class="control">
-            <label for="track" class="control-label">Track</label>
-            <select id="track" class="control-select">
-              <option value="all">All</option>
-            </select>
-          </div>
-
-          <div class="control">
-            <label for="setting" class="control-label">Setting</label>
-            <select id="setting" class="control-select">
-              <option value="all">All</option>
-            </select>
           </div>
 
           <div class="controld">
             <label class="checkbox">
               <input id="opensource" type="checkbox" />
-              <span>Open-source only</span>
+              <span>Open-weights only</span>
             </label>
           </div>
         </div>
@@ -173,23 +159,34 @@
           </div>
 
           <div class="table-wrap">
-            <table class="table" id="leaderboardTable">
+            <table class="table leaderboard-table" id="leaderboardTable">
               <thead>
                 <tr>
-                  <th data-key="rank" class="col-rank" aria-label="Rank">#</th>
                   <th data-key="model" class="col-model">Model</th>
-                  <th data-key="org" class="col-org">Organization</th>
-                  <th data-key="setting" class="col-setting">Setting</th>
-                  <th data-key="score" class="col-score is-sorted" aria-sort="descending">
-                Accuracy (%)
-                <span class="sort-indicator" aria-hidden="true">↓</span>
+                  <th data-key="c1" class="col-metric">
+                    C1<br /><span class="th-sub">Orig / No Search (%)</span>
                   </th>
-                  <th data-key="date" class="col-date">Date</th>
+                  <th data-key="c2" class="col-metric">
+                    C2<br /><span class="th-sub">Orig / Search (%)</span>
+                  </th>
+                  <th data-key="c3" class="col-metric">
+                    C3<br /><span class="th-sub">Crop / No Search (%)</span>
+                  </th>
+                  <th data-key="c4" class="col-metric">
+                    C4<br /><span class="th-sub">Crop / Search (%)</span>
+                  </th>
+                  <th data-key="avg" class="col-metric is-sorted" aria-sort="descending">
+                    Avg<br /><span class="th-sub">(%)</span>
+                    <span class="sort-indicator" aria-hidden="true">↓</span>
+                  </th>
                 </tr>
               </thead>
               <tbody id="leaderboardBody"></tbody>
             </table>
           </div>
+          <p class="table-footnote muted">
+            * Claude-Opus-4.7 does not support search in our evaluation setup.
+          </p>
         </div>
       </section>
 
@@ -267,7 +264,7 @@
       </div>
     </footer>
 
-    <script src="./script.js?v=3" defer></script>
+    <script src="./script.js?v=4" defer></script>
 
     <!-- Fullscreen Image Modal -->
     <div class="modal" id="imageModal">
